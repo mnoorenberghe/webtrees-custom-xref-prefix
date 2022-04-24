@@ -1,0 +1,464 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vesta package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: vesta 1.0\n"
+"Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
+"POT-Creation-Date: 2022-04-18 21:37+0200\n"
+"PO-Revision-Date: 2022-01-15 11:53+0000\n"
+"Last-Translator: ro-la <lacoros@gmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/vesta-webtrees-custom-modules/vesta-common/sk/>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.10.1\n"
+
+#: patchedWebtrees/Http/Controllers/PlaceUrls.php:81
+#, php-format
+msgid "%1$s excluded"
+msgstr "bez %1$s"
+
+#: patchedWebtrees/Http/Controllers/PlaceUrls.php:65
+#, php-format
+msgid "%1$s filters"
+msgstr "%1$s filtre"
+
+#: resources/views/vesta_config.phtml:58
+#, php-format
+msgid "%1$s is the astronomical symbol of the asteroid Vesta, named after the Roman goddess of the hearth, home, and family."
+msgstr "%1$s je astronomický symbol asteroidu Vesta, pomenovaného podľa rímskej bohyne krbu, domova a rodiny."
+
+#: resources/views/admin/vesta_components.phtml:25
+#: resources/views/admin/vesta_components_20.phtml:25
+msgid "(entire module)"
+msgstr "(celý modul)"
+
+#: resources/views/admin/vesta_components.phtml:27
+#: resources/views/admin/vesta_components_20.phtml:27
+msgid "(specific functionality)"
+msgstr "(špecifická funkcionalita)"
+
+#: VestaCommonLibModule.php:61
+msgid "A module providing common classes and translations for other 'Vesta' custom modules."
+msgstr "Modul poskytujúci všeobecné triedy a preklady pre iné moduly „Vesta“."
+
+#: resources/views/vesta_config.phtml:42
+msgid "A: Different modules may target the same component, e.g. by enhancing the facts and events tab in various places. Without hooks, we'd have to use multiple module-specific tabs."
+msgstr "A: Rôzne moduly môžu smerovať na rovnaký komponent, napr. rozšíriť záložku Fakty a udalosti na viacerých miestach. Bez háčikov by sme museli použiť viacero záložiek špecifických pre jednotlivé moduly."
+
+#: resources/views/vesta_config.phtml:66
+msgid "A: Each module has a Readme file with basic information (best viewed online, but also included in the module's folder)."
+msgstr "A: Každý modul má súbor Readme so základnými informáciami (najlepšie je ho pozrieť online, ale je aj súčasťou zložky modulu)."
+
+#: resources/views/vesta_config.phtml:51
+msgid "A: Hooks are usually enabled automatically when the respective custom module is enabled. See also the respective source and target module's preferences."
+msgstr "A: Háčiky sa väčšinou sprístupňujú automaticky, keď je povolený príslušný užívateľský modul. Pozrite aj nastavenia príslušného zdrojového a cieľového modulu."
+
+#: resources/views/vesta_config.phtml:57
+msgid "A: The Vesta symbol is mainly used to group related modules in the module administration list."
+msgstr "A. Symbol Vesta je použitý hlavne na združenie príbuzných modulov v administrácii modulov."
+
+#: resources/views/vesta_config.phtml:35
+msgid "A: Via hooks. Hooks allow modules to extend functionality of other components, without having to re-implement the entire component. Webtrees uses hooks e.g. in the page footer, and for historic events."
+msgstr "A: Cez háčiky (hooks). Háčiky umožňujú modulom rozšíriť funkcionalitu iných komponentov, bez toho, aby sa musel nanovo implementovať celý komponent. webtrees používa háčiky, napr. v pätičke stránky a pre historické udalosti."
+
+#. I18N: Module Configuration
+#: CommonI18N.php:147
+msgid "Deselect in order to have the title appear exactly as the original title."
+msgstr "Zrušte voľbu, ak chcete, aby sa názov zobrazoval exaktne tak, ako pôvodný názov."
+
+#: resources/views/vesta_config.phtml:44
+msgid "Different modules may also be linked dynamically to provide specific data, such as location data for event places."
+msgstr "Rôzne moduly sa môžu pripájať dynamicky, aby poskytli určité údaje, ako napr. údaje o mieste udalosti."
+
+#. I18N: Module Configuration
+#: CommonI18N.php:123
+msgid "Displayed data"
+msgstr "Zobrazované údaje"
+
+#. I18N: Module Configuration
+#: CommonI18N.php:119
+msgid "Displayed title"
+msgstr "Zobrazovaný názov"
+
+#. I18N: Module Configuration
+#: CommonI18N.php:166
+msgid "Facts and Events Tab Settings"
+msgstr "Nastavenie záložky Fakty a udalosti"
+
+#: resources/views/vesta_config.phtml:59
+msgid "If the symbol is displayed improperly, e.g. as a rectangle, check your browser's unicode support capabilities."
+msgstr "Ak sa symbol zobrazuje nesprávne, napr. ako štvorček, skontrolujte vo vašom prehliadači podporu pre Unicode."
+
+#. I18N: Module Configuration
+#: CommonI18N.php:161
+msgid "In particular if both lists are empty, no additional facts and events of this kind will be shown."
+msgstr "Ak sú oba zoznamy prázdne, nebudú zobrazené žiadne takéto dodatočné fakty a údaje."
+
+#. I18N: Module Configuration
+#: CommonI18N.php:131
+#, php-format
+msgid "Include the %1$s symbol in the chart menu entry title"
+msgstr "Použiť symbol %1$s v názve položky v menu schém"
+
+#. I18N: Module Configuration
+#: CommonI18N.php:143
+#, php-format
+msgid "Include the %1$s symbol in the clippings cart menu entry title"
+msgstr "Použiť symbol %1$s v menu pri položke Schránka výstrižkov"
+
+#. I18N: Module Configuration
+#: CommonI18N.php:135
+#, php-format
+msgid "Include the %1$s symbol in the list menu entry title"
+msgstr "Použiť symbol %1$s v názve položky v menu zoznamov"
+
+#. I18N: Module Configuration
+#: CommonI18N.php:139
+#, php-format
+msgid "Include the %1$s symbol in the sidebar title"
+msgstr "Použiť symbol %1$s v bočnom paneli"
+
+#. I18N: Module Configuration
+#: CommonI18N.php:127
+#, php-format
+msgid "Include the %1$s symbol in the tab title"
+msgstr "Použiť symbol %1$s v názve záložky"
+
+#. I18N: Module Configuration
+#: CommonI18N.php:93
+msgid "Location Data Providers"
+msgstr "Poskytovatelia údajov o polohe"
+
+#: resources/views/admin/upgrade/wizard.phtml:35
+#, php-format
+msgid "Make sure all active custom modules are compatible with the new webtrees version %1$s. You may have to upgrade them as well."
+msgstr "Uistite sa, že všetky aktívne užívateľské moduly sú kompatibilné s novou verziou webtrees %1$s. Možno ich budete musieť tiež aktualizovať."
+
+#. I18N: Module Configuration
+#: CommonI18N.php:97
+msgid "Modules listed here are used (in the configured order) to determine map coordinates of places."
+msgstr "Tu uvedené moduly sa používajú (v nakonfigurovanom poradí) na určovanie geografických koordinát miest."
+
+#: resources/views/admin/vesta_components.phtml:31
+#: resources/views/admin/vesta_components_20.phtml:31
+msgctxt "as in \"Move down\""
+msgid "Move"
+msgstr "Posuň"
+
+#: resources/views/admin/vesta_components.phtml:30
+#: resources/views/admin/vesta_components_20.phtml:30
+msgctxt "as in \"Move up\""
+msgid "Move"
+msgstr "Posuň"
+
+#: resources/views/lists/place-history.phtml:166
+msgid "No events of these specific types have occurred at this place."
+msgstr ""
+
+#. I18N: Module Configuration
+#: CommonI18N.php:115
+msgid "Options"
+msgstr "Možnosti"
+
+#: CommonI18N.php:170
+msgid "Place history"
+msgstr ""
+
+#. I18N: Gedcom tag PROP
+#: resources/views/lists/place-history.phtml:112
+msgid "Possessions"
+msgstr ""
+
+#. I18N: Module Configuration
+#: CommonI18N.php:89
+msgid "Provides location data to other custom modules."
+msgstr "Poskytuje údaje o polohe iným užívateľským modulom."
+
+#: resources/views/vesta_config.phtml:48
+msgid "Q: How do I configure additional hooks?"
+msgstr "Q: Ako nakonfigurujem dodatočné háčiky?"
+
+#: resources/views/vesta_config.phtml:32
+msgid "Q: How do the Vesta modules interact?"
+msgstr "Q: Ako spolupracujú moduly Vesta?"
+
+#: resources/views/vesta_config.phtml:63
+msgid "Q: Is there additional documentation?"
+msgstr "Q: Existuje ďalšia dokumentácia?"
+
+#: resources/views/vesta_config.phtml:38
+msgid "Q: Ok, but what's the actual benefit for the user?"
+msgstr "Q: V poriadku, ale aké má z toho výhody užívateľ?"
+
+#: resources/views/vesta_config.phtml:54
+#, php-format
+msgid "Q: What's with the %1$s symbol?"
+msgstr "Q: Čo je %1$s vlastne za symbol?"
+
+#. I18N: Module configuration: Refers to the module's Readme file
+#: CommonI18N.php:103
+msgid "Readme"
+msgstr "Čítať"
+
+#: HelpTextsPlaceHistory.php:15
+msgid "Relationship to predecessor"
+msgstr ""
+
+#. I18N: Module Configuration
+#: CommonI18N.php:73
+#, php-format
+msgid "Requires the '%1$s %2$s' module, and the '%1$s %3$s' module."
+msgstr "Vyžaduje modul „%1$s %2$s“ a „%1$s %3$s“."
+
+#. I18N: Module Configuration
+#: CommonI18N.php:81
+#, php-format
+msgid "Requires the '%1$s %2$s' module, the '%1$s %3$s' module, and the '%1$s %4$s' module."
+msgstr "Vyžaduje modul „%1$s %2$s“, modul „%1$s %3$s“ a modul „%1$s %4$s“."
+
+#. I18N: Module Configuration
+#: CommonI18N.php:66
+#, php-format
+msgid "Requires the '%1$s %2$s' module."
+msgstr "Vyžaduje modul „%1$s %2$s“."
+
+#. I18N: Gedcom tag RESI
+#: resources/views/lists/place-history.phtml:118
+msgid "Residences"
+msgstr ""
+
+#. I18N: Module Configuration
+#: CommonI18N.php:157
+msgid "Restrict to this list of GEDCOM family facts and events. You can modify this list by removing or adding fact and event names, even custom ones, as necessary."
+msgstr "Obmedziť na tento zoznam rodinných GEDCOM faktov a udalostí. Tento zoznam môžete upraviť odstránením, alebo pridaním potrebných faktov a udalostí, pričom môžete použiť aj užívateľské fakty a udalosti."
+
+#. I18N: Module Configuration
+#: CommonI18N.php:153
+msgid "Restrict to this list of GEDCOM individual facts and events. You can modify this list by removing or adding fact and event names, even custom ones, as necessary."
+msgstr "Obmedziť na tento zoznam osobných GEDCOM faktov a udalostí. Tento zoznam môžete upraviť odstránením, alebo pridaním potrebných faktov a udalostí, pričom môžete použiť aj užívateľské fakty a udalosti."
+
+#: resources/views/vesta_config.phtml:69
+#, php-format
+msgid "See also %1$s for an overview of location data management in webtrees."
+msgstr "Pozrite aj %1$s pre prehľad o správe údajov o polohe vo webtrees."
+
+#: resources/views/admin/upgrade/wizard.phtml:63
+#, php-format
+msgid "The currently installed versions of the following custom modules may not be compatible with the new webtrees version %1$s, and there are no upgrades available yet: %2$s"
+msgstr "V súčasnosti inštalované verzie nasledovných užívateľských modulov možno nie sú kompatibilné s novou verziou webtrees %1$s a zatiaľ nie sú k dispozícii príslušné aktualizácie: %2$s"
+
+#: resources/views/admin/upgrade/wizard.phtml:47
+#, php-format
+msgid "The currently installed versions of the following custom modules may not be compatible with the new webtrees version %1$s, but the modules have upgrades available: %2$s"
+msgstr "V súčasnosti inštalované verzie nasledovných užívateľských modulov možno nie sú kompatibilné s novou verziou webtrees %1$s, ale moduly majú k dispozícii aktualizácie: %2$s"
+
+#: HelpTextsPlaceHistory.php:17
+msgid "The relationship refers to the predecessor, i.e. the individual from the preceding fact of the same type."
+msgstr ""
+
+#: VestaCommonLibModule.php:62
+msgid "This module cannot be disabled."
+msgstr "Tento modul sa nedá vypnúť."
+
+#. I18N: Module title
+#: CommonI18N.php:23
+msgid "Vesta Classic Look & Feel"
+msgstr "Vesta Classic Look & Feel"
+
+#. I18N: Module title
+#: CommonI18N.php:59
+msgid "Vesta Clippings Cart"
+msgstr "Vesta Schránka výstrižkov"
+
+#. I18N: Module title
+#: CommonI18N.php:19
+msgid "Vesta Common"
+msgstr "Vesta Common"
+
+#. I18N: Module title
+#: CommonI18N.php:43
+msgid "Vesta Extended Relationships"
+msgstr "Vesta Rozšírené vzťahy"
+
+#. I18N: Module title
+#: CommonI18N.php:27
+msgid "Vesta Facts and events"
+msgstr "Vesta Fakty a udalosti"
+
+#. I18N: Module title
+#: CommonI18N.php:31
+msgid "Vesta Families"
+msgstr "Vesta Rodiny"
+
+#. I18N: Module title
+#: CommonI18N.php:35
+msgid "Vesta Gov4Webtrees"
+msgstr "Vesta Gov4Webtrees"
+
+#. I18N: Module title
+#: CommonI18N.php:55
+msgid "Vesta Places and Pedigree map"
+msgstr "Vesta Mapa miest a predkov"
+
+#. I18N: Module title
+#: CommonI18N.php:47
+msgid "Vesta Research Suggestions"
+msgstr "Vesta Research Suggestions"
+
+#. I18N: Module title
+#: CommonI18N.php:39
+msgid "Vesta Shared Places"
+msgstr "Vesta Zdieľané miesta"
+
+#. I18N: Module title
+#: CommonI18N.php:51
+msgid "Vesta Webtrees Location Data Provider"
+msgstr "Vesta Webtrees Location Data Provider"
+
+#. I18N: Module configuration: Refers to general documentation
+#: CommonI18N.php:107
+msgid "Vesta location data management overview"
+msgstr "Vesta prehľad správy údajov o polohe"
+
+#: resources/views/fact.phtml:173
+msgid "View this family"
+msgstr ""
+
+#: VestaModuleCustomTrait.php:87
+msgid "What's new? "
+msgstr "Čo je nové? "
+
+#: resources/views/vesta_config.phtml:60
+msgid "You may have to install a font providing this symbol, and for certain browsers – Chrome in particular – this font has to be in one of the font families specified by webtrees, such as 'Segoe UI Symbol'."
+msgstr "Mali by ste nainštalovať font, ktorý obsahuje tento symbol, a pre niektoré prehliadače - špeciálne pre Chrome - tento font by mal byť z rodiny fontov špecifikovaných vo webtrees, ako napr. „Segoe UI Symbol“."
+
+#: resources/views/admin/vesta_components.phtml:31
+#: resources/views/admin/vesta_components_20.phtml:31
+msgctxt "as in \"Move down\""
+msgid "down"
+msgstr "dole"
+
+#: patchedWebtrees/Http/Controllers/PlaceUrls.php:79
+#, php-format
+msgid "exclude %1$s"
+msgstr "okrem %1$s"
+
+#: resources/views/vesta_config.phtml:68
+msgid "here"
+msgstr "tu"
+
+#: HookInterfaces/FunctionsPlaceUtils.php:94
+msgid "map coordinates directly (MAP tag)"
+msgstr "koordináty na mape priamo (tag MAP)"
+
+#: patchedWebtrees/Http/Controllers/PlaceUrls.php:89
+#: patchedWebtrees/Http/Controllers/PlaceUrls.php:99
+msgid "reset this filter"
+msgstr "zrušiť tento filter"
+
+#: patchedWebtrees/Http/Controllers/PlaceUrls.php:72
+#, php-format
+msgid "restrict to %1$s"
+msgstr "obmedziť na %1$s"
+
+#: patchedWebtrees/Http/Controllers/PlaceUrls.php:91
+#, php-format
+msgid "restricted to %1$s"
+msgstr "obmedzené na %1$s"
+
+#: resources/views/admin/vesta_components.phtml:30
+#: resources/views/admin/vesta_components_20.phtml:30
+msgctxt "as in \"Move up\""
+msgid "up"
+msgstr "hore"
+
+#~ msgid "All"
+#~ msgstr "Všetko"
+
+#~ msgid "An associate is another individual who was involved with this fact or event, such as a witness or a priest."
+#~ msgstr "Pripojená osoba je taká, ktorá sa zúčastnila tejto udalosti, alebo faktu. Napr. svedok alebo kňaz."
+
+#~ msgid "An associate is another individual who was involved with this individual, such as a friend or an employer."
+#~ msgstr "Pripojená osoba je taká, ktorá je nejako spojená s touto osobou, napr. priateľ, zamestnávateľ a pod."
+
+#~ msgid "Associated facts and events"
+#~ msgstr "Fakty a udalosti pridružených osôb"
+
+#~ msgid "Civil marriage"
+#~ msgstr "Civilný sobáš"
+
+#~ msgid "Create a media object"
+#~ msgstr "Vytvoriť objekt média"
+
+#~ msgid "Create a repository"
+#~ msgstr "Vytvoriť archív"
+
+#~ msgid "Create a shared note"
+#~ msgstr "Vytvoriť zdieľanú poznámku"
+
+#~ msgid "Create a source"
+#~ msgstr "Vytvoriť zdroj"
+
+#~ msgid "Create a submitter"
+#~ msgstr "Vytvoriť zasielateľa"
+
+#~ msgid "Edit the name"
+#~ msgstr "Upraviť meno"
+
+#~ msgid "FamilySearch id"
+#~ msgstr "FamilySearch id"
+
+#~ msgid "Female"
+#~ msgstr "žena"
+
+#~ msgid "Male"
+#~ msgstr "muž"
+
+#~ msgid "No calendar conversion"
+#~ msgstr "Bez konverzie kalendára"
+
+#~ msgid "Only managers can edit"
+#~ msgstr "Upravovať môžu len správcovia"
+
+#~ msgid "Registered partnership"
+#~ msgstr "registrované partnerstvo"
+
+#~ msgid "Religious marriage"
+#~ msgstr "Cirkevný sobáš"
+
+#~ msgid "Show to managers"
+#~ msgstr "Zobraziť správcom"
+
+#~ msgid "Show to members"
+#~ msgstr "Zobraziť členom"
+
+#~ msgid "Show to visitors"
+#~ msgstr "Zobraziť návštevníkom"
+
+#~ msgctxt "unknown gender"
+#~ msgid "Unknown"
+#~ msgstr "Neznáme"
+
+#~ msgid "Use this image for charts and on the individual’s page."
+#~ msgstr "Použiť tento obrázok pre schémy a na stránke osoby."
+
+#~ msgid "always"
+#~ msgstr "vždy"
+
+#~ msgid "hh:mm or hh:mm:ss"
+#~ msgstr "hh:mm alebo hh:mm:ss"
+
+#~ msgid "never"
+#~ msgstr "nikdy"
+
+#~ msgid "no"
+#~ msgstr "nie"
+
+#~ msgid "yes"
+#~ msgstr "áno"

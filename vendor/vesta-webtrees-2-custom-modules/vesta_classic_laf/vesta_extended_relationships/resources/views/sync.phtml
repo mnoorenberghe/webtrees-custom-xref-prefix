@@ -1,0 +1,35 @@
+<?php
+
+use Cissee\WebtreesExt\MoreI18N;
+use Fisharebest\Webtrees\Http\RequestHandlers\ControlPanel;
+use Fisharebest\Webtrees\Http\RequestHandlers\ModulesAllPage;
+use Fisharebest\Webtrees\I18N;
+use Fisharebest\Webtrees\View;
+?>
+
+<?= view('components/breadcrumbs', ['links' => [route(ControlPanel::class) => MoreI18N::xlate('Control panel'), route(ModulesAllPage::class) => MoreI18N::xlate('Modules'), $title]]) ?>
+
+<h1><?= $title ?></h1>
+
+<p class="small text-muted">
+    <?php echo I18N::translate('This process calculates dates for all INDI - FAM links, so that relationships at a specific point in time can be calculated efficiently.') ?>
+</p>
+<p class="small text-muted">
+    <?php echo I18N::translate('For large trees, this process may initially take several minutes. You can always safely abort and continue later.') ?>
+</p>
+<p class="small text-muted">
+    <?php echo I18N::translate('The process should be repeated (but will finish much faster) whenever a tree is edited, otherwise you may obtain inconsistent relationship data (displayed relationships are always valid, but they may not actually have been established at the given date, if changes in the tree are not synchronized here).') ?>
+</p>
+
+<div id="sync" class="col-xs-12">
+    <div class="progress">
+        <?php echo MoreI18N::xlate('Calculating…'); ?>
+    </div>
+</div>
+
+<?php View::push('javascript'); ?>
+<script>
+  //empty javascript object used to trigger POST
+  $("#sync").load("<?= $post ?>", {});
+</script>
+<?php View::endpush() ?>

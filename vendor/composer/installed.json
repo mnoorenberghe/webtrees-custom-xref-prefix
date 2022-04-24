@@ -1,0 +1,23 @@
+{
+    "packages": [
+        {
+            "name": "vesta-webtrees-2-custom-modules/vesta_classic_laf",
+            "version": "2.1.0",
+            "version_normalized": "2.1.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://cissee.de/vesta.latest.zip"
+            },
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Cissee\\Webtrees\\Module\\ClassicLAF\\": "modules_v4/vesta_classic_look_and_feel/"
+                }
+            },
+            "install-path": "../vesta-webtrees-2-custom-modules/vesta_classic_laf"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

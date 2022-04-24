@@ -1,0 +1,1367 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vesta package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: vesta 1.0\n"
+"Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
+"POT-Creation-Date: 2022-04-18 21:37+0200\n"
+"PO-Revision-Date: 2021-10-17 10:35+0000\n"
+"Last-Translator: TheDutchJewel <thedutchjewel@gmail.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/vesta-webtrees-custom-modules/vesta-common/nl/>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
+
+#: patchedWebtrees/Http/Controllers/PlaceUrls.php:81
+#, php-format
+msgid "%1$s excluded"
+msgstr "%1$s uitgesloten"
+
+#: patchedWebtrees/Http/Controllers/PlaceUrls.php:65
+#, php-format
+msgid "%1$s filters"
+msgstr "%1$s filters"
+
+#: resources/views/vesta_config.phtml:58
+#, php-format
+msgid "%1$s is the astronomical symbol of the asteroid Vesta, named after the Roman goddess of the hearth, home, and family."
+msgstr "%1$s is het astronomische symbool van de planetoïde Vesta, vernoemd naar de Romeinse godin van de haard, het huis en de familie."
+
+#: resources/views/admin/vesta_components.phtml:25
+#: resources/views/admin/vesta_components_20.phtml:25
+msgid "(entire module)"
+msgstr "(volledige module)"
+
+#: resources/views/admin/vesta_components.phtml:27
+#: resources/views/admin/vesta_components_20.phtml:27
+msgid "(specific functionality)"
+msgstr "(specifieke functionaliteit)"
+
+#: VestaCommonLibModule.php:61
+msgid "A module providing common classes and translations for other 'Vesta' custom modules."
+msgstr "Een module met gemeenschappelijke klassen voor andere 'Vesta' aangepaste modules."
+
+#: resources/views/vesta_config.phtml:42
+msgid "A: Different modules may target the same component, e.g. by enhancing the facts and events tab in various places. Without hooks, we'd have to use multiple module-specific tabs."
+msgstr "A: Verschillende modules kunnen zich richten op hetzelfde onderdeel, bijvoorbeeld door het tabblad feiten en gebeurtenissen op verschillende plaatsen te verbeteren. Zonder hooks moeten er meerdere modulespecifieke tabbladen worden gebruiken."
+
+#: resources/views/vesta_config.phtml:66
+msgid "A: Each module has a Readme file with basic information (best viewed online, but also included in the module's folder)."
+msgstr "A: Elke module heeft een Readme-bestand met basisinformatie (online te bekijken, maar ook opgenomen in de map van de module)."
+
+#: resources/views/vesta_config.phtml:51
+msgid "A: Hooks are usually enabled automatically when the respective custom module is enabled. See also the respective source and target module's preferences."
+msgstr "A: Hooks worden meestal automatisch ingeschakeld wanneer de desbetreffende aangepaste module is ingeschakeld. Zie ook de voorkeuren van de betreffende bron- en doelmodule."
+
+#: resources/views/vesta_config.phtml:57
+msgid "A: The Vesta symbol is mainly used to group related modules in the module administration list."
+msgstr "A: Het Vesta-symbool wordt voornamelijk gebruikt om gerelateerde modules in de modulebeheerlijst te groeperen."
+
+#: resources/views/vesta_config.phtml:35
+msgid "A: Via hooks. Hooks allow modules to extend functionality of other components, without having to re-implement the entire component. Webtrees uses hooks e.g. in the page footer, and for historic events."
+msgstr "A: Via 'hooks'. Hooks zorgen ervoor dat modules de functionaliteit van andere componenten kunnen uitbreiden, zonder dat het hele onderdeel opnieuw hoeft te worden geïmplementeerd. Webtrees maakt gebruik van hooks, bijvoorbeeld in de paginavoettekst, en voor historische gebeurtenissen."
+
+#. I18N: Module Configuration
+#: CommonI18N.php:147
+msgid "Deselect in order to have the title appear exactly as the original title."
+msgstr "Schakel de selectie uit om de oorspronkelijke naam te blijven gebruiken."
+
+#: resources/views/vesta_config.phtml:44
+msgid "Different modules may also be linked dynamically to provide specific data, such as location data for event places."
+msgstr "Verschillende modules kunnen ook dynamisch worden gekoppeld om specifieke gegevens te verstrekken, zoals locatiegegevens voor gebeurtenisplaatsen."
+
+#. I18N: Module Configuration
+#: CommonI18N.php:123
+msgid "Displayed data"
+msgstr "Weergegeven gegevens"
+
+#. I18N: Module Configuration
+#: CommonI18N.php:119
+msgid "Displayed title"
+msgstr "Weergegeven titel"
+
+#. I18N: Module Configuration
+#: CommonI18N.php:166
+msgid "Facts and Events Tab Settings"
+msgstr "Instellingen voor tabblad Feiten en gebeurtenissen"
+
+#: resources/views/vesta_config.phtml:59
+msgid "If the symbol is displayed improperly, e.g. as a rectangle, check your browser's unicode support capabilities."
+msgstr "Als het symbool niet goed wordt weergegeven, bijvoorbeeld als rechthoek, controleer dan de Unicode-ondersteuningsmogelijkheden van uw browser."
+
+#. I18N: Module Configuration
+#: CommonI18N.php:161
+msgid "In particular if both lists are empty, no additional facts and events of this kind will be shown."
+msgstr "Als beide lijsten leeg zijn, zullen geen aanvullende feiten en gebeurtenissen van deze aard worden getoond."
+
+#. I18N: Module Configuration
+#: CommonI18N.php:131
+#, php-format
+msgid "Include the %1$s symbol in the chart menu entry title"
+msgstr "Het %1$s-symbool opnemen in de vermelding in het diagrammenu"
+
+#. I18N: Module Configuration
+#: CommonI18N.php:143
+#, php-format
+msgid "Include the %1$s symbol in the clippings cart menu entry title"
+msgstr "Het %1$s-symbool opnemen in de menutitel"
+
+#. I18N: Module Configuration
+#: CommonI18N.php:135
+#, php-format
+msgid "Include the %1$s symbol in the list menu entry title"
+msgstr "Het %1$s-symbool opnemen in het Lijsten-menu"
+
+#. I18N: Module Configuration
+#: CommonI18N.php:139
+#, php-format
+msgid "Include the %1$s symbol in the sidebar title"
+msgstr "Het symbool %1$s opnemen in de zijbalktitel"
+
+#. I18N: Module Configuration
+#: CommonI18N.php:127
+#, php-format
+msgid "Include the %1$s symbol in the tab title"
+msgstr "Het %1$s-symbool opnemen in de titel van het tabblad"
+
+#. I18N: Module Configuration
+#: CommonI18N.php:93
+msgid "Location Data Providers"
+msgstr "Aanbieders van locatiegegevens"
+
+#: resources/views/admin/upgrade/wizard.phtml:35
+#, php-format
+msgid "Make sure all active custom modules are compatible with the new webtrees version %1$s. You may have to upgrade them as well."
+msgstr "Zorg ervoor dat alle actieve aangepaste modules compatibel zijn met de nieuwe webtrees-versie %1$s. Mogelijk moet u ze ook upgraden."
+
+#. I18N: Module Configuration
+#: CommonI18N.php:97
+msgid "Modules listed here are used (in the configured order) to determine map coordinates of places."
+msgstr "Modules die hier worden vermeld, worden (in de geconfigureerde volgorde) gebruikt om kaartcoördinaten van plaatsen te bepalen."
+
+#: resources/views/admin/vesta_components.phtml:31
+#: resources/views/admin/vesta_components_20.phtml:31
+msgctxt "as in \"Move down\""
+msgid "Move"
+msgstr "Verplaats"
+
+#: resources/views/admin/vesta_components.phtml:30
+#: resources/views/admin/vesta_components_20.phtml:30
+msgctxt "as in \"Move up\""
+msgid "Move"
+msgstr "Verplaats"
+
+#: resources/views/lists/place-history.phtml:166
+msgid "No events of these specific types have occurred at this place."
+msgstr ""
+
+#. I18N: Module Configuration
+#: CommonI18N.php:115
+msgid "Options"
+msgstr "Opties"
+
+#: CommonI18N.php:170
+msgid "Place history"
+msgstr ""
+
+#. I18N: Gedcom tag PROP
+#: resources/views/lists/place-history.phtml:112
+msgid "Possessions"
+msgstr ""
+
+#. I18N: Module Configuration
+#: CommonI18N.php:89
+msgid "Provides location data to other custom modules."
+msgstr "Biedt locatiegegevens aan andere aangepaste modules."
+
+#: resources/views/vesta_config.phtml:48
+msgid "Q: How do I configure additional hooks?"
+msgstr "V: Hoe configureer ik extra hooks?"
+
+#: resources/views/vesta_config.phtml:32
+msgid "Q: How do the Vesta modules interact?"
+msgstr "V: Hoe werken de Vesta-modules samen?"
+
+#: resources/views/vesta_config.phtml:63
+msgid "Q: Is there additional documentation?"
+msgstr "V: Is er aanvullende documentatie?"
+
+#: resources/views/vesta_config.phtml:38
+msgid "Q: Ok, but what's the actual benefit for the user?"
+msgstr "V: Oké, maar wat is het voordeel voor de gebruiker?"
+
+#: resources/views/vesta_config.phtml:54
+#, php-format
+msgid "Q: What's with the %1$s symbol?"
+msgstr "V: Wat is er met het %1$s-symbool?"
+
+#. I18N: Module configuration: Refers to the module's Readme file
+#: CommonI18N.php:103
+msgid "Readme"
+msgstr "Leesmij"
+
+#: HelpTextsPlaceHistory.php:15
+msgid "Relationship to predecessor"
+msgstr ""
+
+#. I18N: Module Configuration
+#: CommonI18N.php:73
+#, php-format
+msgid "Requires the '%1$s %2$s' module, and the '%1$s %3$s' module."
+msgstr "Vereist de modules '%1$s %2$s' en '%1$s %3$s'."
+
+#. I18N: Module Configuration
+#: CommonI18N.php:81
+#, php-format
+msgid "Requires the '%1$s %2$s' module, the '%1$s %3$s' module, and the '%1$s %4$s' module."
+msgstr "Vereist de modules '%1$s %2$s', '%1$s %3$s' en '%1$s %4$s'."
+
+#. I18N: Module Configuration
+#: CommonI18N.php:66
+#, php-format
+msgid "Requires the '%1$s %2$s' module."
+msgstr "Vereist de module '%1$s %2$s'."
+
+#. I18N: Gedcom tag RESI
+#: resources/views/lists/place-history.phtml:118
+msgid "Residences"
+msgstr ""
+
+#. I18N: Module Configuration
+#: CommonI18N.php:157
+msgid "Restrict to this list of GEDCOM family facts and events. You can modify this list by removing or adding fact and event names, even custom ones, as necessary."
+msgstr "Beperken tot deze lijst van GEDCOM-gezinsfeiten en -gebeurtenissen. Indien nodig kunt u deze lijst wijzigen door namen van feiten en gebeurtenissen, zelfs aangepaste namen, te verwijderen of toe te voegen."
+
+#. I18N: Module Configuration
+#: CommonI18N.php:153
+msgid "Restrict to this list of GEDCOM individual facts and events. You can modify this list by removing or adding fact and event names, even custom ones, as necessary."
+msgstr "Beperken tot deze lijst van GEDCOM-persoonsfeiten en -gebeurtenissen. Indien nodig kunt u deze lijst wijzigen door namen van feiten en gebeurtenissen, zelfs aangepaste namen, te verwijderen of toe te voegen."
+
+#: resources/views/vesta_config.phtml:69
+#, php-format
+msgid "See also %1$s for an overview of location data management in webtrees."
+msgstr "Zie ook %1$s voor een overzicht van locatiegegevensbeheer in webtrees."
+
+#: resources/views/admin/upgrade/wizard.phtml:63
+#, php-format
+msgid "The currently installed versions of the following custom modules may not be compatible with the new webtrees version %1$s, and there are no upgrades available yet: %2$s"
+msgstr "De huidige geïnstalleerde versies van de volgende aangepaste modules zijn mogelijk niet compatibel met de nieuwe webtrees-versie %1$s, en er zijn nog geen upgrades beschikbaar: %2$s"
+
+#: resources/views/admin/upgrade/wizard.phtml:47
+#, php-format
+msgid "The currently installed versions of the following custom modules may not be compatible with the new webtrees version %1$s, but the modules have upgrades available: %2$s"
+msgstr "De huidige geïnstalleerde versies van de volgende aangepaste modules zijn mogelijk niet compatibel met de nieuwe webtrees-versie %1$s, maar er zijn upgrades voor de modules beschikbaar: %2$s"
+
+#: HelpTextsPlaceHistory.php:17
+msgid "The relationship refers to the predecessor, i.e. the individual from the preceding fact of the same type."
+msgstr ""
+
+#: VestaCommonLibModule.php:62
+msgid "This module cannot be disabled."
+msgstr "Deze module kan niet worden uitgeschakeld."
+
+#. I18N: Module title
+#: CommonI18N.php:23
+msgid "Vesta Classic Look & Feel"
+msgstr "Vesta Klassieke uitstraling & gevoel"
+
+#. I18N: Module title
+#: CommonI18N.php:59
+msgid "Vesta Clippings Cart"
+msgstr "Vesta Stamboomknipsels"
+
+#. I18N: Module title
+#: CommonI18N.php:19
+msgid "Vesta Common"
+msgstr "Vesta Algemeen"
+
+#. I18N: Module title
+#: CommonI18N.php:43
+msgid "Vesta Extended Relationships"
+msgstr "Vesta Uitgebreide verwantschappen"
+
+#. I18N: Module title
+#: CommonI18N.php:27
+msgid "Vesta Facts and events"
+msgstr "Vesta Feiten en gebeurtenissen"
+
+#. I18N: Module title
+#: CommonI18N.php:31
+msgid "Vesta Families"
+msgstr "Vesta Gezinnen"
+
+#. I18N: Module title
+#: CommonI18N.php:35
+msgid "Vesta Gov4Webtrees"
+msgstr "Vesta Gov4Webtrees"
+
+#. I18N: Module title
+#: CommonI18N.php:55
+msgid "Vesta Places and Pedigree map"
+msgstr "Vesta Plaatsen en Grafische kwartierstaat"
+
+#. I18N: Module title
+#: CommonI18N.php:47
+msgid "Vesta Research Suggestions"
+msgstr "Vesta Onderzoekssuggesties"
+
+#. I18N: Module title
+#: CommonI18N.php:39
+msgid "Vesta Shared Places"
+msgstr "Vesta Gedeelde plaatsen"
+
+#. I18N: Module title
+#: CommonI18N.php:51
+msgid "Vesta Webtrees Location Data Provider"
+msgstr "Vesta Webtreeslocatiegegevensaanbieder"
+
+#. I18N: Module configuration: Refers to general documentation
+#: CommonI18N.php:107
+msgid "Vesta location data management overview"
+msgstr "Overzicht van Vesta-locatiegegevensbeheer"
+
+#: resources/views/fact.phtml:173
+msgid "View this family"
+msgstr "Bekijk dit gezin"
+
+#: VestaModuleCustomTrait.php:87
+msgid "What's new? "
+msgstr "Wat is er nieuw? "
+
+#: resources/views/vesta_config.phtml:60
+msgid "You may have to install a font providing this symbol, and for certain browsers – Chrome in particular – this font has to be in one of the font families specified by webtrees, such as 'Segoe UI Symbol'."
+msgstr "Het kan zijn dat u een lettertype moet installeren dat dit symbool bevat, en voor bepaalde browsers - met name Chrome - moet dit lettertype zich bevinden in een van de lettertypefamilies die door webtrees zijn opgegeven, zoals 'Segoe UI Symbol'."
+
+#: resources/views/admin/vesta_components.phtml:31
+#: resources/views/admin/vesta_components_20.phtml:31
+msgctxt "as in \"Move down\""
+msgid "down"
+msgstr "omlaag"
+
+#: patchedWebtrees/Http/Controllers/PlaceUrls.php:79
+#, php-format
+msgid "exclude %1$s"
+msgstr "%1$s uitsluiten"
+
+#: resources/views/vesta_config.phtml:68
+msgid "here"
+msgstr "hier"
+
+#: HookInterfaces/FunctionsPlaceUtils.php:94
+msgid "map coordinates directly (MAP tag)"
+msgstr "coördinaten rechtstreeks toewijzen (MAP-label)"
+
+#: patchedWebtrees/Http/Controllers/PlaceUrls.php:89
+#: patchedWebtrees/Http/Controllers/PlaceUrls.php:99
+msgid "reset this filter"
+msgstr "dit filter opnieuw instellen"
+
+#: patchedWebtrees/Http/Controllers/PlaceUrls.php:72
+#, php-format
+msgid "restrict to %1$s"
+msgstr "beperken tot %1$s"
+
+#: patchedWebtrees/Http/Controllers/PlaceUrls.php:91
+#, php-format
+msgid "restricted to %1$s"
+msgstr "beperkt tot %1$s"
+
+#: resources/views/admin/vesta_components.phtml:30
+#: resources/views/admin/vesta_components_20.phtml:30
+msgctxt "as in \"Move up\""
+msgid "up"
+msgstr "omhoog"
+
+#~ msgid "(aged %s)"
+#~ msgstr "(leeftijd %s)"
+
+#~ msgctxt "Female"
+#~ msgid "(aged %s)"
+#~ msgstr "(leeftijd %s)"
+
+#~ msgctxt "Male"
+#~ msgid "(aged %s)"
+#~ msgstr "(leeftijd %s)"
+
+#~ msgid "<span class=\"label\">%1$s:</span> <span class=\"field\" dir=\"auto\">%2$s</span>"
+#~ msgstr "<span class=\"label\">%1$s:</span> <span class=\"field\" dir=\"auto\">%2$s</span>"
+
+#~ msgid "Abbreviation"
+#~ msgstr "Afkorting"
+
+#~ msgid "Address"
+#~ msgstr "Adres"
+
+#~ msgid "Address line 1"
+#~ msgstr "Adresregel 1"
+
+#~ msgid "Address line 2"
+#~ msgstr "Adresregel 2"
+
+#~ msgid "Address line 3"
+#~ msgstr "Adresregel 3"
+
+#~ msgid "Adopted by father"
+#~ msgstr "Geadopteerd door vader"
+
+#~ msgid "Adopted by mother"
+#~ msgstr "Geadopteerd door moeder"
+
+#~ msgid "Adoption"
+#~ msgstr "Adoptie"
+
+#~ msgid "Adult christening"
+#~ msgstr "Doop van volwassene"
+
+#~ msgid "Age"
+#~ msgstr "Leeftijd"
+
+#~ msgid "Agency"
+#~ msgstr "Instantie"
+
+#~ msgid "Album"
+#~ msgstr "Album"
+
+#~ msgid "Alias"
+#~ msgstr "Alias"
+
+#~ msgid "All"
+#~ msgstr "Alle"
+
+#~ msgid "Also known as"
+#~ msgstr "Ook bekend als"
+
+#~ msgid "An associate is another individual who was involved with this fact or event, such as a witness or a priest."
+#~ msgstr "Een gerelateerd persoon is een andere persoon die betrokken was bij dit feit of deze gebeurtenis, zoals een getuige of een priester."
+
+#~ msgid "An associate is another individual who was involved with this individual, such as a friend or an employer."
+#~ msgstr "Een gerelateerd persoon is een andere persoon die betrokken was bij deze persoon, zoals een vriend of een werkgever."
+
+#~ msgid "Ancestors interest"
+#~ msgstr "Interesse in voorouders"
+
+#~ msgid "Ancestral file number"
+#~ msgstr "Voorouderlijk dossiernummer (AFN)"
+
+#~ msgid "Annulment"
+#~ msgstr "Nietigverklaring"
+
+#~ msgid "Associate"
+#~ msgstr "Gerelateerd persoon"
+
+#~ msgid "Associated facts and events"
+#~ msgstr "Feiten en gebeurtenissen met gerelateerde personen"
+
+#~ msgid "Author"
+#~ msgstr "Auteur"
+
+#~ msgid "Author of last change"
+#~ msgstr "Auteur van laatste wijziging"
+
+#~ msgid "Baptism"
+#~ msgstr "Gedoopt"
+
+#~ msgid "Bar mitzvah"
+#~ msgstr "Bar mitswa"
+
+#~ msgid "Bat mitzvah"
+#~ msgstr "Bar mitswa"
+
+#~ msgid "Bibliography"
+#~ msgstr "Bibliografie"
+
+#~ msgid "Binary data object"
+#~ msgstr "Binair gegevensobject"
+
+#~ msgid "Birth"
+#~ msgstr "Geboren"
+
+#~ msgid "Blessing"
+#~ msgstr "Zegening"
+
+#~ msgid "Brit milah"
+#~ msgstr "Brit milah"
+
+#~ msgid "Burial"
+#~ msgstr "Begraven"
+
+#~ msgid "Call number"
+#~ msgstr "Inventarisnummer"
+
+#~ msgid "Caste"
+#~ msgstr "Kaste"
+
+#~ msgid "Cause"
+#~ msgstr "Oorzaak"
+
+#~ msgid "Cause of death"
+#~ msgstr "Doodsoorzaak"
+
+#~ msgid "Cemetery"
+#~ msgstr "Begraafplaats"
+
+#~ msgid "Census"
+#~ msgstr "Volkstelling"
+
+#~ msgid "Census date"
+#~ msgstr "Datum volkstelling"
+
+#~ msgid "Census place"
+#~ msgstr "Plaats volkstelling"
+
+#~ msgid "Character set"
+#~ msgstr "Tekenreeks"
+
+#~ msgid "Child"
+#~ msgstr "Kind"
+
+#~ msgid "Christening"
+#~ msgstr "Gedoopt"
+
+#~ msgid "Citation details"
+#~ msgstr "Details citaat"
+
+#~ msgid "Citizenship"
+#~ msgstr "Staatsburgerschap"
+
+#~ msgid "City"
+#~ msgstr "Plaats"
+
+#~ msgid "Civil marriage"
+#~ msgstr "Burgerlijk huwelijk"
+
+#~ msgid "Comment"
+#~ msgstr "Commentaar"
+
+#~ msgid "Common law marriage"
+#~ msgstr "Erkend partnerschap"
+
+#~ msgid "Concatenation"
+#~ msgstr "Samenvoeging"
+
+#~ msgid "Confirmation"
+#~ msgstr "Vormsel/confirmatie"
+
+#~ msgid "Continued"
+#~ msgstr "Vervolg"
+
+#~ msgid "Coordinates"
+#~ msgstr "Coördinaten"
+
+#~ msgid "Copyright"
+#~ msgstr "Copyright"
+
+#~ msgid "Corporation"
+#~ msgstr "Organisatie"
+
+#~ msgid "Country"
+#~ msgstr "Land"
+
+#~ msgid "Create a media object"
+#~ msgstr "Maak een nieuw mediaobject aan"
+
+#~ msgid "Create a repository"
+#~ msgstr "Maak een nieuwe opslagplaats aan"
+
+#~ msgid "Create a shared note"
+#~ msgstr "Maak een nieuwe gedeelde notitie aan"
+
+#~ msgid "Create a source"
+#~ msgstr "Maak een nieuwe bron aan"
+
+#~ msgid "Create a submitter"
+#~ msgstr "Maak een nieuwe indiener aan"
+
+#~ msgid "Cremation"
+#~ msgstr "Crematie"
+
+#~ msgid "DNA markers"
+#~ msgstr "DNA-markers"
+
+#~ msgid "Data"
+#~ msgstr "Gegevens"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Date of LDS baptism"
+#~ msgstr "Datum van LDS-doop"
+
+#~ msgid "Date of LDS child sealing"
+#~ msgstr "Datum van LDS-kindverzegeling"
+
+#~ msgid "Date of LDS endowment"
+#~ msgstr "Datum van LDS-schenking"
+
+#~ msgid "Date of adoption"
+#~ msgstr "Adoptiedatum"
+
+#~ msgid "Date of baptism"
+#~ msgstr "Doopdatum"
+
+#~ msgid "Date of bar mitzvah"
+#~ msgstr "Bar mitswa-datum"
+
+#~ msgid "Date of bat mitzvah"
+#~ msgstr "Bat mitswa-datum"
+
+#~ msgid "Date of birth"
+#~ msgstr "Geboortedatum"
+
+#~ msgid "Date of blessing"
+#~ msgstr "Datum zegening"
+
+#~ msgid "Date of brit milah"
+#~ msgstr "Brit milah-datum"
+
+#~ msgid "Date of burial"
+#~ msgstr "Begrafenisdatum"
+
+#~ msgid "Date of christening"
+#~ msgstr "Doopdatum"
+
+#~ msgid "Date of confirmation"
+#~ msgstr "Datum van vormsel/confirmatie"
+
+#~ msgid "Date of cremation"
+#~ msgstr "Crematiedatum"
+
+#~ msgid "Date of death"
+#~ msgstr "Overlijdensdatum"
+
+#~ msgid "Date of emigration"
+#~ msgstr "Emigratiedatum"
+
+#~ msgid "Date of engagement"
+#~ msgstr "Verlovingsdatum"
+
+#~ msgid "Date of entry in original source"
+#~ msgstr "Inschrijfdatum in originele bron"
+
+#~ msgid "Date of event"
+#~ msgstr "Gebeurtenisdatum"
+
+#~ msgid "Date of first communion"
+#~ msgstr "Datum eerste communie"
+
+#~ msgid "Date of immigration"
+#~ msgstr "Immigratiedatum"
+
+#~ msgid "Date of last change"
+#~ msgstr "Datum laatste wijziging"
+
+#~ msgid "Date of marriage"
+#~ msgstr "Huwelijksdatum"
+
+#~ msgid "Date of marriage banns"
+#~ msgstr "Ondertrouwdatum"
+
+#~ msgid "Date of naturalization"
+#~ msgstr "Naturalisatiedatum"
+
+#~ msgid "Date of ordination"
+#~ msgstr "Datum van wijding"
+
+#~ msgid "Date of residence"
+#~ msgstr "Datum bewoning"
+
+#~ msgid "Death"
+#~ msgstr "Overleden"
+
+#~ msgid "Death of one spouse"
+#~ msgstr "Overlijden van één huwelijkspartner"
+
+#~ msgid "Degree"
+#~ msgstr "Graad"
+
+#~ msgid "Descendants"
+#~ msgstr "Afstammelingen"
+
+#~ msgid "Descendants interest"
+#~ msgstr "Interesse in afstammelingen"
+
+#~ msgid "Description"
+#~ msgstr "Beschrijving"
+
+#~ msgid "Destination"
+#~ msgstr "Bestemming"
+
+#~ msgid "Divorce"
+#~ msgstr "Echtscheiding"
+
+#~ msgid "Divorce filed"
+#~ msgstr "Echtscheiding aangevraagd"
+
+#~ msgid "Edit the name"
+#~ msgstr "Wijzig naam"
+
+#~ msgid "Education"
+#~ msgstr "Opleiding"
+
+#~ msgid "Email address"
+#~ msgstr "E-mailadres"
+
+#~ msgid "Emigration"
+#~ msgstr "Emigratie"
+
+#~ msgid "Employer"
+#~ msgstr "Werkgever"
+
+#~ msgid "Engagement"
+#~ msgstr "Verloving"
+
+#~ msgid "Event"
+#~ msgstr "Gebeurtenis"
+
+#~ msgid "Eye color"
+#~ msgstr "Oogkleur"
+
+#~ msgid "Fact"
+#~ msgstr "Feit"
+
+#~ msgid "Fact 1"
+#~ msgstr "Feit 1"
+
+#~ msgid "Fact 10"
+#~ msgstr "Feit 10"
+
+#~ msgid "Fact 11"
+#~ msgstr "Feit 11"
+
+#~ msgid "Fact 12"
+#~ msgstr "Feit 12"
+
+#~ msgid "Fact 13"
+#~ msgstr "Feit 13"
+
+#~ msgid "Fact 2"
+#~ msgstr "Feit 2"
+
+#~ msgid "Fact 3"
+#~ msgstr "Feit 3"
+
+#~ msgid "Fact 4"
+#~ msgstr "Feit 4"
+
+#~ msgid "Fact 5"
+#~ msgstr "Feit 5"
+
+#~ msgid "Fact 6"
+#~ msgstr "Feit 6"
+
+#~ msgid "Fact 7"
+#~ msgstr "Feit 7"
+
+#~ msgid "Fact 8"
+#~ msgstr "Feit 8"
+
+#~ msgid "Fact 9"
+#~ msgstr "Feit 9"
+
+#~ msgid "Family"
+#~ msgstr "Gezin"
+
+#~ msgid "Family as a child"
+#~ msgstr "Gezinsleden van kind"
+
+#~ msgid "Family as a spouse"
+#~ msgstr "Gezinsleden van ega"
+
+#~ msgid "Family file"
+#~ msgstr "Familiebestand"
+
+#~ msgid "FamilySearch id"
+#~ msgstr "FamilySearch-ID"
+
+#~ msgid "Fax"
+#~ msgstr "Fax"
+
+#~ msgid "Female"
+#~ msgstr "Vrouw"
+
+#~ msgid "File size"
+#~ msgstr "Bestandsgrootte"
+
+#~ msgid "Filename"
+#~ msgstr "Bestandsnaam"
+
+#~ msgid "First communion"
+#~ msgstr "Eerste communie"
+
+#~ msgid "Format"
+#~ msgstr "Formaat"
+
+#~ msgid "Funeral"
+#~ msgstr "Begrafenis"
+
+#~ msgid "GEDCOM file"
+#~ msgstr "GEDCOM-bestand"
+
+#~ msgid "GOV id for type of location"
+#~ msgstr "GOV-ID voor soort locatie"
+
+#~ msgid "GOV identifier"
+#~ msgstr "GOV-identificatienummer"
+
+#~ msgid "Gender"
+#~ msgstr "Geslacht"
+
+#~ msgid "Generations of ancestors"
+#~ msgstr "Generaties van voorouders"
+
+#~ msgid "Given names"
+#~ msgstr "Voornamen"
+
+#~ msgid "Godparent"
+#~ msgstr "Peetouder"
+
+#~ msgid "Graduation"
+#~ msgstr "Diploma/afstuderen"
+
+#~ msgid "Hair color"
+#~ msgstr "Haarkleur"
+
+#~ msgid "Header"
+#~ msgstr "Koptekst"
+
+#~ msgid "Hebrew"
+#~ msgstr "Hebreeuws"
+
+#~ msgid "Hebrew name"
+#~ msgstr "Hebreeuwse naam"
+
+#~ msgid "Height"
+#~ msgstr "Lengte"
+
+#~ msgid "Higher-level shared place"
+#~ msgstr "Bovenliggende gedeelde plaats"
+
+#~ msgid "Highlighted image"
+#~ msgstr "Gemarkeerde afbeelding"
+
+#~ msgid "Holocaust"
+#~ msgstr "Holocaust"
+
+#~ msgid "Husband"
+#~ msgstr "Echtgenoot"
+
+#~ msgid "Identification number"
+#~ msgstr "Identificatienummer"
+
+#~ msgid "Image dimensions"
+#~ msgstr "Afmetingen afbeelding"
+
+#~ msgid "Immigration"
+#~ msgstr "Immigratie"
+
+#~ msgid "Individual"
+#~ msgstr "Persoon"
+
+#~ msgid "Infant"
+#~ msgstr "Minder dan 1 jaar oud"
+
+#~ msgid "Interment"
+#~ msgstr "Begrafenis"
+
+#~ msgid "LDS baptism"
+#~ msgstr "LDS-doop"
+
+#~ msgid "LDS child sealing"
+#~ msgstr "LDS-kindverzegeling"
+
+#~ msgid "LDS confirmation"
+#~ msgstr "LDS-bevestiging"
+
+#~ msgid "LDS endowment"
+#~ msgstr "LDS-schenking"
+
+#~ msgid "LDS spouse sealing"
+#~ msgstr "LDS-verzegeling aan huwelijkspartner"
+
+#~ msgid "Language"
+#~ msgstr "Taal"
+
+#~ msgid "Last change"
+#~ msgstr "Laatste wijziging"
+
+#~ msgid "Latitude"
+#~ msgstr "Breedtegraad"
+
+#~ msgid "Legatee"
+#~ msgstr "Legataris"
+
+#~ msgid "Linked database ID"
+#~ msgstr "Gekoppelde database-ID"
+
+#~ msgid "Location"
+#~ msgstr "Locatie"
+
+#~ msgid "Longitude"
+#~ msgstr "Lengtegraad"
+
+#~ msgid "Mailing name"
+#~ msgstr "Mailingnaam"
+
+#~ msgid "Male"
+#~ msgstr "Man"
+
+#~ msgid "Marriage"
+#~ msgstr "Huwelijk"
+
+#~ msgid "Marriage banns"
+#~ msgstr "Ondertrouw"
+
+#~ msgid "Marriage beginning status"
+#~ msgstr "Status aanvang huwelijk"
+
+#~ msgid "Marriage bond"
+#~ msgstr "Huwelijkstoezegging"
+
+#~ msgid "Marriage contract"
+#~ msgstr "Huwelijkscontract"
+
+#~ msgid "Marriage ending status"
+#~ msgstr "Status einde huwelijk"
+
+#~ msgid "Marriage intention"
+#~ msgstr "Huwelijksvoornemen"
+
+#~ msgid "Marriage license"
+#~ msgstr "Trouwvergunning"
+
+#~ msgid "Marriage settlement"
+#~ msgstr "Huwelijkse voorwaarden"
+
+#~ msgid "Marriage status"
+#~ msgstr "Huwelijksstatus"
+
+#~ msgid "Marriage type unknown"
+#~ msgstr "Onbekend soort huwelijk"
+
+#~ msgid "Married name"
+#~ msgstr "Aangenomen huwelijksnaam"
+
+#~ msgid "Married surname"
+#~ msgstr "Aangenomen huwelijksachternaam"
+
+#~ msgid "Media object"
+#~ msgstr "Mediaobject"
+
+#~ msgid "Media type"
+#~ msgstr "Soort media"
+
+#~ msgid "Medical"
+#~ msgstr "Medisch"
+
+#~ msgid "Medical condition"
+#~ msgstr "Medische toestand"
+
+#~ msgid "Military"
+#~ msgstr "Krijgsmacht"
+
+#~ msgid "Military service"
+#~ msgstr "Militaire dienst"
+
+#~ msgid "My page"
+#~ msgstr "Mijn pagina"
+
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgctxt "Repository"
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgid "Name in Hebrew"
+#~ msgstr "Naam in het Hebreeuws"
+
+#~ msgid "Name prefix"
+#~ msgstr "Titel"
+
+#~ msgid "Name suffix"
+#~ msgstr "Achtervoegsel van naam"
+
+#~ msgid "Namesake"
+#~ msgstr "Vernoemd naar"
+
+#~ msgid "Nationality"
+#~ msgstr "Nationaliteit"
+
+#~ msgid "Naturalization"
+#~ msgstr "Naturalisatie"
+
+#~ msgid "Never married"
+#~ msgstr "Nooit getrouwd"
+
+#~ msgid "Nickname"
+#~ msgstr "Roepnaam"
+
+#~ msgid "No calendar conversion"
+#~ msgstr "Geen kalenderomzetting"
+
+#~ msgid "Not living"
+#~ msgstr "Overleden"
+
+#~ msgid "Not married"
+#~ msgstr "Ongehuwd"
+
+#~ msgid "Note"
+#~ msgstr "Notitie"
+
+#~ msgid "Number of children"
+#~ msgstr "Aantal kinderen"
+
+#~ msgid "Number of marriages"
+#~ msgstr "Aantal huwelijken"
+
+#~ msgid "Occupation"
+#~ msgstr "Beroep"
+
+#~ msgid "Only managers can edit"
+#~ msgstr "Alleen managers kunnen wijzigen"
+
+#~ msgid "Ordinance"
+#~ msgstr "Verordening"
+
+#~ msgid "Ordination"
+#~ msgstr "Wijding"
+
+#~ msgid "Permanent number"
+#~ msgstr "Permanent nummer"
+
+#~ msgid "Phone"
+#~ msgstr "Telefoon"
+
+#~ msgid "Phonetic"
+#~ msgstr "Fonetisch"
+
+#~ msgid "Phonetic name"
+#~ msgstr "Fonetische naam"
+
+#~ msgid "Phonetic place"
+#~ msgstr "Fonetische plaatsnaam"
+
+#~ msgid "Phonetic title"
+#~ msgstr "Fonetische title"
+
+#~ msgid "Photo"
+#~ msgstr "Foto"
+
+#~ msgid "Place"
+#~ msgstr "Plaats"
+
+#~ msgid "Place in Hebrew"
+#~ msgstr "Plaatsnaam in het Hebreeuws"
+
+#~ msgid "Place of LDS baptism"
+#~ msgstr "Plaats van LDS-doop"
+
+#~ msgid "Place of LDS child sealing"
+#~ msgstr "Plaats van LDS-kindverzegeling"
+
+#~ msgid "Place of LDS endowment"
+#~ msgstr "Plaats van LDS-schenking"
+
+#~ msgid "Place of adoption"
+#~ msgstr "Plaats van adoptie"
+
+#~ msgid "Place of baptism"
+#~ msgstr "Doopplaats"
+
+#~ msgid "Place of bar mitzvah"
+#~ msgstr "Plaats van bar mitswa"
+
+#~ msgid "Place of bat mitzvah"
+#~ msgstr "Plaats van bat mitswa"
+
+#~ msgid "Place of birth"
+#~ msgstr "Geboorteplaats"
+
+#~ msgid "Place of blessing"
+#~ msgstr "Plaats van zegening"
+
+#~ msgid "Place of brit milah"
+#~ msgstr "Plaats van Brit milah"
+
+#~ msgid "Place of burial"
+#~ msgstr "Plaats van begrafenis"
+
+#~ msgid "Place of christening"
+#~ msgstr "Doopplaats"
+
+#~ msgid "Place of confirmation"
+#~ msgstr "Plaats van vormsel/confirmatie"
+
+#~ msgid "Place of cremation"
+#~ msgstr "Plaats van crematie"
+
+#~ msgid "Place of death"
+#~ msgstr "Plaats van overlijden"
+
+#~ msgid "Place of emigration"
+#~ msgstr "Plaats van emigratie"
+
+#~ msgid "Place of engagement"
+#~ msgstr "Plaats van verloving"
+
+#~ msgid "Place of event"
+#~ msgstr "Plaats van gebeurtenis"
+
+#~ msgid "Place of first communion"
+#~ msgstr "Plaats van eerste communie"
+
+#~ msgid "Place of immigration"
+#~ msgstr "Plaats van immigratie"
+
+#~ msgid "Place of marriage"
+#~ msgstr "Huwelijksplaats"
+
+#~ msgid "Place of marriage banns"
+#~ msgstr "Ondertrouwplaats"
+
+#~ msgid "Place of naturalization"
+#~ msgstr "Plaats van naturalisatie"
+
+#~ msgid "Place of ordination"
+#~ msgstr "Plaats van wijding"
+
+#~ msgid "Place of residence"
+#~ msgstr "Woonplaats"
+
+#~ msgid "Postal code"
+#~ msgstr "Postcode"
+
+#~ msgid "Probate"
+#~ msgstr "Nalatenschap vastleggen"
+
+#~ msgid "Property"
+#~ msgstr "Eigendom"
+
+#~ msgid "Publication"
+#~ msgstr "Publicatie"
+
+#~ msgid "Quality of data"
+#~ msgstr "Kwaliteit van gegevens"
+
+#~ msgid "Re-order media"
+#~ msgstr "Wijzig volgorde media"
+
+#~ msgid "Record ID number"
+#~ msgstr "Record-ID-nummer"
+
+#~ msgid "Record file number"
+#~ msgstr "Recordbestandsnummer"
+
+#~ msgid "Reference number"
+#~ msgstr "Referentienummer"
+
+#~ msgid "Registered partnership"
+#~ msgstr "Samenlevingscontract"
+
+#~ msgid "Relationship"
+#~ msgstr "Verwantschap"
+
+#~ msgid "Relationship to father"
+#~ msgstr "Verwantschap met vader"
+
+#~ msgid "Relationship to mother"
+#~ msgstr "Verwantschap met moeder"
+
+#~ msgid "Relationship to parents"
+#~ msgstr "Verwantschap met ouders"
+
+#~ msgid "Religion"
+#~ msgstr "Religie"
+
+#~ msgid "Religious institution"
+#~ msgstr "Religieus instituut"
+
+#~ msgid "Religious marriage"
+#~ msgstr "Kerkelijk huwelijk"
+
+#~ msgid "Religious name"
+#~ msgstr "Religieuze naam"
+
+#~ msgid "Remote server"
+#~ msgstr "Server op afstand"
+
+#~ msgid "Repository"
+#~ msgstr "Opslagplaats"
+
+#~ msgid "Research task"
+#~ msgstr "Onderzoekstaak"
+
+#~ msgid "Residence"
+#~ msgstr "Woonplaats"
+
+#~ msgid "Restriction"
+#~ msgstr "Beperking"
+
+#~ msgid "Retirement"
+#~ msgstr "Pensioen"
+
+#~ msgid "Role"
+#~ msgstr "Rol"
+
+#~ msgid "Romanized"
+#~ msgstr "Geromaniseerd"
+
+#~ msgid "Romanized place"
+#~ msgstr "Geromaniseerde plaatsnaam"
+
+#~ msgid "Romanized title"
+#~ msgstr "Geromaniseerde titel"
+
+#~ msgid "School or college"
+#~ msgstr "School"
+
+#~ msgid "Scrapbook"
+#~ msgstr "Aantekenboek"
+
+#~ msgid "Separation"
+#~ msgstr "Scheiding"
+
+#~ msgid "Shared note"
+#~ msgstr "Gedeelde notitie"
+
+#~ msgid "Short version"
+#~ msgstr "Korte versie"
+
+#~ msgid "Show to managers"
+#~ msgstr "Toon aan managers"
+
+#~ msgid "Show to members"
+#~ msgstr "Toon aan leden"
+
+#~ msgid "Show to visitors"
+#~ msgstr "Toon aan bezoekers"
+
+#~ msgid "Sign out"
+#~ msgstr "Afmelden"
+
+#~ msgid "Skip to content"
+#~ msgstr "Spring naar inhoud"
+
+#~ msgid "Slide show"
+#~ msgstr "Diavoorstelling"
+
+#~ msgid "Social security number"
+#~ msgstr "Social security number (USA)"
+
+#~ msgid "Source"
+#~ msgstr "Bron"
+
+#~ msgid "State"
+#~ msgstr "Provincie/Staat"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Status change date"
+#~ msgstr "Status van wijzigingsdatum"
+
+#~ msgid "Submission"
+#~ msgstr "Aanlevering"
+
+#~ msgid "Submitter"
+#~ msgstr "Indiener"
+
+#~ msgid "Surname"
+#~ msgstr "Achternaam"
+
+#~ msgid "Surname prefix"
+#~ msgstr "Tussenvoegsel"
+
+#~ msgid "Temple"
+#~ msgstr "Tempel"
+
+#~ msgid "Text"
+#~ msgstr "Tekst"
+
+#~ msgid "Time"
+#~ msgstr "Tijd"
+
+#~ msgid "Title"
+#~ msgstr "Titel"
+
+#~ msgid "Title in Hebrew"
+#~ msgstr "Titel in het Hebreeuws"
+
+#~ msgid "Trailer"
+#~ msgstr "Trailer"
+
+#~ msgid "Type"
+#~ msgstr "Soort"
+
+#~ msgid "Type of event"
+#~ msgstr "Soort gebeurtenis"
+
+#~ msgid "Type of fact"
+#~ msgstr "Soort feit"
+
+#~ msgid "Type of hierarchical relationship"
+#~ msgstr "Soort hiërarchische verwantschap"
+
+#~ msgid "Type of location"
+#~ msgstr "Soort locatie"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Unique identifier"
+#~ msgstr "Uniek identificatienummer"
+
+#~ msgctxt "unknown gender"
+#~ msgid "Unknown"
+#~ msgstr "Onbekend"
+
+#~ msgid "Unrecognized GEDCOM code"
+#~ msgstr "Onbekende GEDCOM-code"
+
+#~ msgid "Use this image for charts and on the individual’s page."
+#~ msgstr "Gebruik deze afbeelding voor diagrammen en op de persoonspagina."
+
+#~ msgid "Version"
+#~ msgstr "Versie"
+
+#~ msgid "Weight"
+#~ msgstr "Gewicht"
+
+#~ msgid "Wife"
+#~ msgstr "Echtgenote"
+
+#~ msgid "Will"
+#~ msgstr "Testament"
+
+#~ msgid "Witness"
+#~ msgstr "Getuige"
+
+#~ msgid "Yahrzeit"
+#~ msgstr "Yahrzeit"
+
+#~ msgid "always"
+#~ msgstr "altijd"
+
+#~ msgid "by"
+#~ msgstr "door"
+
+#~ msgid "close"
+#~ msgstr "sluiten"
+
+#~ msgid "hh:mm or hh:mm:ss"
+#~ msgstr "uu:mm of uu:mm:ss"
+
+#~ msgid "never"
+#~ msgstr "nooit"
+
+#~ msgid "no"
+#~ msgstr "nee"
+
+#~ msgid "yes"
+#~ msgstr "ja"

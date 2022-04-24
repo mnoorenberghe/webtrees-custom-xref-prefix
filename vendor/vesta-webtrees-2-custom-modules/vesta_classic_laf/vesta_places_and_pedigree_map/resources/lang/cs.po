@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vesta package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: vesta 1.0\n"
+"Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
+"POT-Creation-Date: 2022-04-03 20:23+0200\n"
+"PO-Revision-Date: 2021-01-18 21:32+0000\n"
+"Last-Translator: Josef Prause <josef.prause@gmail.com>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/vesta-webtrees-custom-modules/vesta-places-and-pedigree-map/cs/>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.5-dev\n"
+
+#. I18N: Module Configuration
+#: PlacesAndPedigreeMapModuleTrait.php:68
+msgid "A smaller threshold setting prevents performance issues in large lists, which may be encountered in flat place hierarchies."
+msgstr "Nastavení nižšího prahu brání problémům s výkonem u velkých seznamů, které se mohou vyskytnout u mělkých hierarchií."
+
+#. I18N: Module Configuration
+#: PlacesAndPedigreeMapModuleTrait.php:63
+msgid "Display details"
+msgstr "Zobrazit podrobnosti"
+
+#. I18N: Module Configuration
+#: PlacesAndPedigreeMapModuleTrait.php:67
+msgid "Do not display details (such as location and number of individuals) if list size (for a specific place) is larger than ths threshold."
+msgstr "Nezobrazovat podrobnosti (jako jsou poloha a počet osob), jestliže je velikost seznamu (pro určité místo) větší než tento práh."
+
+#. I18N: Module Configuration
+#: PlacesAndPedigreeMapModuleTrait.php:29
+#, php-format
+msgid "In particular, you should activate the '%1$s Vesta Webtrees Location Data Provider' module if you manage your location data via webtrees (outside the GEDCOM)."
+msgstr "Zejména je nutno aktivovat modul '%1$s Vesta Webtrees Location Data Provider', pokud spravujete svoje údaje o poloze ve webtrees (mimo GEDCOM)."
+
+#. I18N: Module Configuration
+#: PlacesAndPedigreeMapModuleTrait.php:95
+msgid "Place hierarchy list"
+msgstr "Seznam hierarchie míst"
+
+#. I18N: Module Configuration
+#: PlacesAndPedigreeMapModuleTrait.php:21
+#: PlacesAndPedigreeMapModuleTrait.php:27
+msgid "The Place hierarchy. Also show the location of events and the birthplace of ancestors on a map. Replacement for the original 'Place hierarchy', 'Places' and  'Pedigree map' modules."
+msgstr "Hierarchie místa. Zobrazuje také polohu událostí a místo narození předků na mapě. Náhrada za původní moduly 'Hierarchie míst', 'Místa' a 'Mapa rodokmenu'."
+
+#. I18N: Module Configuration
+#: PlacesAndPedigreeMapModuleTrait.php:66
+msgid "Threshold size"
+msgstr "Velikost prahu"
+
+#. I18N: Module Configuration
+#: PlacesAndPedigreeMapModuleTrait.php:28
+msgid "Uses location data from GEDCOM, as well as location data provided by other modules."
+msgstr "Používá údaje o poloze z GEDCOMu a údaje o poloze poskytnuté ostatními moduly."
+
+#: WhatsNew/WhatsNew0.php:11
+msgid "Vesta Places and Pedigree map: Now also provides a replacement for the Place hierarchy list, in order to show additional location data."
+msgstr "Vesta Mapa míst a předků: nyní také poskytuje náhradu za seznam Hierarchie míst za účelem zobrazení dodatečných údajů o poloze."
+
+#~ msgid "Deselect in order to have the chart menu entry appear exactly as the original chart menu entry."
+#~ msgstr "Potlačit, aby položka v menu Diagramy vypadala stejně jako v původním menu."
+
+#~ msgid "Deselect in order to have the list menu entry appear exactly as the original chart menu entry."
+#~ msgstr "Potlačit, aby položka v menu Seznamy vypadala stejně jako v původním menu."
+
+#~ msgid "Deselect in order to have the tab appear exactly as the original tab."
+#~ msgstr "Potlačit, aby záložka vypadala stejně jako původní záložka."
+
+#~ msgid "Displayed title"
+#~ msgstr "Zobrazený název"
+
+#~ msgid "General"
+#~ msgstr "Všeobecné"
+
+#~ msgid "Include the %1$s symbol in the chart menu entry"
+#~ msgstr "Přidat symbol %1$s do názvu položky v menu Diagramy"
+
+#~ msgid "Include the %1$s symbol in the list menu entry"
+#~ msgstr "Přidat symbol %1$s do názvu položky v menu Seznamy"
+
+#~ msgid "Include the %1$s symbol in the tab title"
+#~ msgstr "Přidat symbol %1$s do názvu záložky"
+
+#~ msgid "Modules listed here are used (in the configured order) to determine map coordinates of places."
+#~ msgstr "Moduly v tomto seznamu slouží (v tom pořadí) k určení mapových souřadnic míst."
+
+#~ msgid "Places and Pedigree Map Location Data Providers"
+#~ msgstr "Places and Pedigree Map Location Data Providers"
+
+#~ msgid "Vesta Places and Pedigree map"
+#~ msgstr "Vesta Places and Pedigree map"

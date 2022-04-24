@@ -1,0 +1,23 @@
+{
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "vesta-webtrees-2-custom-modules/vesta_classic_laf",
+        "version": "2.1.0",
+        "dist": {
+          "url": "https://cissee.de/vesta.latest.zip",
+          "type": "zip"
+        },
+        "autoload": {
+          "psr-4": {
+            "Cissee\\Webtrees\\Module\\ClassicLAF\\": "modules_v4/vesta_classic_look_and_feel/"
+          }
+        }
+      }
+    }
+  ],
+  "require": {
+    "vesta-webtrees-2-custom-modules/vesta_classic_laf": "2.1.0"
+  }
+}

@@ -1,0 +1,152 @@
+<?php
+
+use Cissee\WebtreesExt\MoreI18N;
+use Fisharebest\Webtrees\View;
+
+//adapted from location-edit.phtml
+
+/**
+ * @var string               $latitude
+ * @var string               $longitude
+ * @var array<array<float>>  $map_bounds
+ * @var <array<float>        $marker_position
+ * @var object               $leaflet_config
+ */
+
+//[RC] adjusted
+$name = 'TODO'; //$location->locationName();
+    
+?>
+
+<div class="row gchart wt-place-location-edit-wrapper">
+    <div id="wt-map" class="col-sm-9 wt-ajax-load wt-map wt-place-location-edit" dir="ltr"></div>
+    <ul class="col-sm-3 wt-place-ocation-edit-sidebar wt-page-options-value list-unstyled px-md-1"></ul>
+</div>
+
+<?php View::push('styles') ?>
+<style>
+    .osm-admin-map {
+        height: 200px;
+        border: 1px solid darkGrey
+    }
+</style>
+<?php View::endpush() ?>
+
+<?php View::push('javascript') ?>
+<script>
+  'use strict';
+
+  (function () {
+    const config = <?= json_encode($leaflet_config, JSON_THROW_ON_ERROR) ?>;
+    <?php
+    //[RC] adjusted
+    //const add_place = <?= json_encode($location->id() === null, JSON_THROW_ON_ERROR) _?_>;
+    ?>
+    const add_place = false;
+
+    let new_place_lati = document.getElementById('new_place_lati');
+    let new_place_long = document.getElementById('new_place_long');
+
+    // postcss_image_inliner breaks the autodetection of image paths.
+    L.Icon.Default.imagePath = <?= json_encode(asset('css/images/'), JSON_THROW_ON_ERROR) ?>;
+
+    // draggable marker
+    let marker = L.marker(<?= json_encode($marker_position, JSON_THROW_ON_ERROR) ?>, {
+      draggable: true,
+    })
+    .on('dragend', function () {
+      let coords = marker.getLatLng();
+      map.panTo(coords);
+      new_place_lati.value = Number(coords.lat).toFixed(5);
+      new_place_long.value = Number(coords.lng).toFixed(5);
+    });
+
+    /**
+     * Passed to resetControl to
+     * perform necessary reset actions on map
+     */
+     let resetCallback = function () {
+      map.fitBounds(<?= json_encode($map_bounds, JSON_THROW_ON_ERROR) ?>, {padding: [50, 30]});
+      marker.setLatLng(<?= json_encode($marker_position, JSON_THROW_ON_ERROR) ?>);
+      document.querySelector('form').reset();
+    }
+
+    // Geocoder (place lookup)
+    let geocoder = new L.Control.geocoder({
+      position: 'bottomleft',
+      defaultMarkGeocode: false,
+      expand: 'click',
+      showResultIcons: true,
+      query: <?= json_encode($name, JSON_THROW_ON_ERROR) ?>,
+      placeholder: <?= json_encode(MoreI18N::xlate('Place'), JSON_THROW_ON_ERROR) ?>,
+      errorMessage: <?= json_encode(MoreI18N::xlate('Nothing found.'), JSON_THROW_ON_ERROR) ?>,
+      iconLabel: <?= json_encode(MoreI18N::xlate('Search'), JSON_THROW_ON_ERROR) ?>
+    })
+    .on('markgeocode', function (result) {
+      let coords = result.geocode.center;
+      let place = result.geocode.name.split(',', 1).toString();
+      marker.setLatLng(coords);
+      map.panTo(coords);
+      if (add_place) {
+        document.getElementById('new_place_name').value = place
+      }
+      new_place_lati.value = Number(coords.lat).toFixed(5);
+      new_place_long.value = Number(coords.lng).toFixed(5);
+    });
+
+    const map = webtrees.buildLeafletJsMap('wt-map', config, resetCallback)
+      .addControl(geocoder)
+      .addLayer(marker)
+      .fitBounds(<?= json_encode($map_bounds, JSON_THROW_ON_ERROR) ?>, {padding: [50, 30]})
+      .on('zoomend', function () {
+        if (!map.getBounds().contains(marker.getLatLng())) {
+          map.panTo(marker.getLatLng());
+        }
+    });
+
+    document.querySelectorAll('.editable').forEach((element) => {
+      element.addEventListener('change', () => {
+        let lat = new_place_lati.value;
+        let lng = new_place_long.value;
+        marker.setLatLng([lat, lng]);
+        map.panTo([lat, lng]);
+      });
+    });
+
+    window.onload = function() {
+      let icon = document.querySelector('.leaflet-control-geocoder-icon');
+      icon.setAttribute('title', <?= json_encode(MoreI18N::xlate('Search'), JSON_THROW_ON_ERROR) ?>);
+    }
+  })();
+</script>
+<?php View::endpush() ?>
+
+<?php View::push('javascript') ?>
+<script>
+    'use strict';
+
+    //adapted from webtrees.js reformatLatLong
+    function osm2webtrees(val, pos, neg) {
+      var txt = ''+val;
+      txt = txt.replace(/-/g, neg); // -0.5698 ==> W0.5698
+      // 17.1234 ==> N17.1234
+      if (txt && txt.charAt(0) !== neg && txt.charAt(0) !== pos) {
+        txt = pos + txt;
+      }
+      return txt;
+    }
+  
+    function webtrees2osm(val) {
+      var txt = ''+val;
+      txt = txt.replace(/N/g, '');
+      txt = txt.replace(/S/g, '-');
+      txt = txt.replace(/E/g, '');
+      txt = txt.replace(/W/g, '-');
+      var ret = Number(txt);
+      if (isNaN(ret)) {
+        return 0;
+      }
+      return ret;
+    }
+</script>
+<?php View::endpush() ?>

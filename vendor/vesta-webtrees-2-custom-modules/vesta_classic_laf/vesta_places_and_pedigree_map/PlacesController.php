@@ -1,0 +1,127 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Cissee\Webtrees\Module\PPM;
+
+use Fisharebest\Webtrees\Http\ViewResponseTrait;
+use Fisharebest\Webtrees\Individual;
+use Fisharebest\Webtrees\Module\PlacesModule;
+use Fisharebest\Webtrees\Services\LeafletJsService;
+use Fisharebest\Webtrees\Services\ModuleService;
+use ReflectionClass;
+use stdClass;
+use Vesta\Hook\HookInterfaces\FunctionsPlaceUtils;
+use Vesta\Model\MapCoordinates;
+use Vesta\Model\PlaceStructure;
+use function view;
+
+//TODO: support other map providers?
+class PlacesController {
+
+    use ViewResponseTrait;
+    
+    protected $module;
+    protected $module_service;
+    protected $leaflet_js_service;
+
+    public function __construct(
+        PlacesAndPedigreeMapModuleExtended $module, 
+        ModuleService $module_service,
+        LeafletJsService $leaflet_js_service) {
+        
+        $this->module = $module;
+        $this->module_service = $module_service;
+        $this->leaflet_js_service = $leaflet_js_service;
+    }
+
+    protected const ICONS = [
+        'FAM:CENS'  => ['color' => 'cyan', 'name' => 'list fas'],
+        'FAM:MARR'  => ['color' => 'green', 'name' => 'infinity fas'],
+        'INDI:BAPM' => ['color' => 'pink', 'name' => 'water fas'],
+        'INDI:BARM' => ['color' => 'pink', 'name' => 'star-of-david fas'],
+        'INDI:BASM' => ['color' => 'pink', 'name' => 'star-of-david fas'],
+        'INDI:BIRT' => ['color' => 'pink', 'name' => 'baby-carriage fas'],
+        'INDI:BURI' => ['color' => 'purple', 'name' => 'times fas'],
+        'INDI:CENS' => ['color' => 'cyan', 'name' => 'list fas'],
+        'INDI:CHR'  => ['color' => 'pink', 'name' => 'water fas'],
+        'INDI:CHRA' => ['color' => 'pink', 'name' => 'water fas'],
+        'INDI:CREM' => ['color' => 'black', 'name' => 'times fas'],
+        'INDI:DEAT' => ['color' => 'black', 'name' => 'times fas'],
+        'INDI:EDUC' => ['color' => 'violet', 'name' => 'university fas'],
+        'INDI:GRAD' => ['color' => 'violet', 'name' => 'university fas'],
+        'INDI:OCCU' => ['color' => 'cyan', 'name' => 'industry fas'],
+        'INDI:RESI' => ['color' => 'cyan', 'name' => 'home fas'],
+    ];
+    
+    protected const DEFAULT_ICON = ['color' => 'gold', 'name' => 'bullseye fas'];
+
+    public function getTabContent(Individual $individual): string {
+        $placesModule = new PlacesModule($this->leaflet_js_service, $this->module_service);
+
+        return view('modules/places/tab', [
+            'data' => $this->getMapData($placesModule, $individual),
+            'leaflet_config' => $this->leaflet_js_service->config(),
+        ]);
+    }
+
+    //adapted from PlacesModule
+    private function getMapData($placesModule, Individual $indi): stdClass {
+        $class = new ReflectionClass($placesModule);
+        $getPersonalFactsMethod = $class->getMethod('getPersonalFacts');
+        $getPersonalFactsMethod->setAccessible(true);
+        $summaryDataMethod = $class->getMethod('summaryData');
+        $summaryDataMethod->setAccessible(true);
+
+        //$placesModule->getPersonalFacts($indi);
+        $facts = $getPersonalFactsMethod->invoke($placesModule, $indi);
+
+        $geojson = [
+            'type' => 'FeatureCollection',
+            'features' => [],
+        ];
+
+        //[RC] TODO: use hierarchy (higher-level places) as fallback?
+
+        foreach ($facts as $id => $fact) {
+            $latLon = $this->getLatLon($fact);
+
+            $icon = PlacesController::ICONS[$fact->tag()] ?? PlacesController::DEFAULT_ICON;
+
+            if ($latLon !== null) {
+                $latitude = $latLon->getLati();
+                $longitude = $latLon->getLong();
+
+                $geojson['features'][] = [
+                    'type' => 'Feature',
+                    'id' => $id,
+                    'valid' => true,
+                    'geometry' => [
+                        'type' => 'Point',
+                        'coordinates' => [$longitude, $latitude],
+                    ],
+                    'properties' => [
+                        'polyline' => null,
+                        'icon' => $icon,
+                        'tooltip' => $fact->place()->gedcomName(),
+                        'summary' => view('modules/places/event-sidebar',
+                            //$placesModule->summaryData($indi, $fact)),
+                            $summaryDataMethod->invoke($placesModule, $indi, $fact)),
+                        'zoom' => 15/* only used initially? */ /* $location->zoom() */,
+                    ],
+                ];
+            }
+        }
+
+        return (object) $geojson;
+    }
+
+    private function getLatLon($fact): ?MapCoordinates {
+        $ps = PlaceStructure::fromFact($fact);
+        if ($ps === null) {
+            return null;
+        }
+        return FunctionsPlaceUtils::plac2map($this->module, $ps, false);
+    }
+
+}

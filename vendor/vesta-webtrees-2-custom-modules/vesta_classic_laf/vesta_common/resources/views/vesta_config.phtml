@@ -1,0 +1,72 @@
+<?php
+
+use Cissee\WebtreesExt\MoreI18N;
+use Fisharebest\Webtrees\Http\RequestHandlers\ControlPanel;
+use Fisharebest\Webtrees\Http\RequestHandlers\ModulesAllPage;
+use Fisharebest\Webtrees\I18N;
+
+?>
+
+<?= view('components/breadcrumbs', ['links' => [route(ControlPanel::class) => MoreI18N::xlate('Control panel'), route(ModulesAllPage::class) => MoreI18N::xlate('Modules'), $title]]) ?>
+
+<h1><?= $title ?></h1>
+
+<?php foreach ($fullDescription as $description) { ?>
+  <p class="text-muted">
+      <?php echo $description; ?>
+  </p>
+<?php } ?>
+
+<div>
+<?php echo $editConfigBeforeFaq ?>
+</div>
+
+<div>
+<?php echo $editConfigAfterFaq ?>
+</div>
+  
+<?php echo $prefs ?>
+  
+<h1><?php echo MoreI18N::xlate('FAQ') ?></h1>		
+<p class="small">
+    <?php echo I18N::translate('Q: How do the Vesta modules interact?') ?>
+</p>
+<p class="small text-muted">
+    <?php echo I18N::translate('A: Via hooks. Hooks allow modules to extend functionality of other components, without having to re-implement the entire component. Webtrees uses hooks e.g. in the page footer, and for historic events.') ?>
+</p>
+<p class="small">
+    <?php echo I18N::translate('Q: Ok, but what\'s the actual benefit for the user?') ?>
+</p>
+<p class="small text-muted">
+    <?php
+    echo I18N::translate('A: Different modules may target the same component, e.g. by enhancing the facts and events tab in various places. Without hooks, we\'d have to use multiple module-specific tabs.');
+    echo ' ';
+    echo I18N::translate('Different modules may also be linked dynamically to provide specific data, such as location data for event places.')
+    ?>
+</p>
+<p class="small">
+    <?php echo I18N::translate('Q: How do I configure additional hooks?') ?>
+</p>
+<p class="small text-muted">
+    <?php echo I18N::translate('A: Hooks are usually enabled automatically when the respective custom module is enabled. See also the respective source and target module\'s preferences.') ?>
+</p>
+<p class="small">
+    <?php echo I18N::translate('Q: What\'s with the %1$s symbol?', $vesta) ?>
+</p>
+<p class="small text-muted">
+    <?php echo I18N::translate('A: The Vesta symbol is mainly used to group related modules in the module administration list.') ?>
+    <?php echo I18N::translate('%1$s is the astronomical symbol of the asteroid Vesta, named after the Roman goddess of the hearth, home, and family.', $vesta) ?>
+    <?php echo I18N::translate('If the symbol is displayed improperly, e.g. as a rectangle, check your browser\'s unicode support capabilities.') . ' '; ?>
+    <?php echo I18N::translate('You may have to install a font providing this symbol, and for certain browsers – Chrome in particular – this font has to be in one of the font families specified by webtrees, such as \'Segoe UI Symbol\'.') ?>
+</p>
+<p class="small">
+    <?php echo I18N::translate('Q: Is there additional documentation?') ?>
+</p>
+<p class="small text-muted">
+    <?php echo I18N::translate('A: Each module has a Readme file with basic information (best viewed online, but also included in the module\'s folder).') ?>
+    <?php       
+      $link = '<a href="https://github.com/vesta-webtrees-2-custom-modules/vesta_common/blob/master/docs/LocationData.md">'.I18N::translate('here').'</a>';
+      echo I18N::translate('See also %1$s for an overview of location data management in webtrees.', $link) 
+    ?>
+</p>
+

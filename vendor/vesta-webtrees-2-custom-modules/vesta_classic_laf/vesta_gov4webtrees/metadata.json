@@ -1,0 +1,188 @@
+[
+	{
+		"version": "2.0.13.0.0",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.13.1.0",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.15.0.0",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.15.1.0",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.15.2.0",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.15.3.0",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.15.4.0",
+		"from": "2.0.12",
+		"to": "2.0.18",
+		"changelog": ["Added option to exclude objects of type 'confederation'.", "Added option to define additional languages for place names."]
+	},
+	{
+		"version": "2.0.16.0.0",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.16.0.1",
+		"from": "2.0.12",
+		"to": "2.0.18",
+		"changelog": ["Bugfixes."]
+	},
+	{
+		"version": "2.0.16.0.3",
+		"from": "2.0.12",
+		"to": "2.0.18",
+		"changelog": ["Translations."]
+	},
+	{
+		"version": "2.0.16.0.4",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.16.1.0",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.16.1.1",
+		"from": "2.0.12",
+		"to": "2.0.18",
+		"changelog": ["Some small adjustments."]
+	},
+	{
+		"version": "2.0.16.2.0",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.16.3.0",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.16.4.0",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.16.5.0",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.16.5.2",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.16.6.0",
+		"from": "2.0.12",
+		"to": "2.0.18",
+		"changelog": ["Option to modify all GOV data locally.", "Extended and improved handling of 'organizational' GOV object types."]
+	},
+	{
+		"version": "2.0.16.6.1",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.16.6.2",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.17.0.0",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.17.0.1",
+		"from": "2.0.12",
+		"to": "2.0.18",
+		"changelog": ["Bugfix: Specific object data from the GOV server led to errors."]
+	},
+	{
+		"version": "2.0.17.1.0",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.17.1.1",
+		"from": "2.0.12",
+		"to": "2.0.18"
+	},
+	{
+		"version": "2.0.19.0.0",
+		"from": "2.0.12",
+		"to": "2.0.20"
+	},
+	{
+		"version": "2.0.19.0.3",
+		"from": "2.0.12",
+		"to": "2.0.20"
+	},
+	{
+		"version": "2.0.19.1.0",
+		"from": "2.0.12",
+		"to": "2.0.20"
+	},
+	{
+		"version": "2.0.19.2.0",
+		"from": "2.0.12",
+		"to": "2.0.20"
+	},
+	{
+		"version": "2.0.22.0.0",
+		"from": "2.0.12",
+		"to": "2.0.23"
+	},
+	{
+		"version": "2.0.23+2.1.0-beta.2.0.0",
+		"from": "2.0.12",
+		"to": "2.1.0"
+	},
+	{
+		"version": "2.0.23+2.1.0-beta.2.0.1",
+		"from": "2.0.12",
+		"to": "2.1.0"
+	},
+	{
+		"version": "2.0.23+2.1.0-beta.2.1.0",
+		"from": "2.0.12",
+		"to": "2.1.0"
+	},
+	{
+		"version": "2.0.23+2.1.0-beta.2.2.0",
+		"from": "2.0.12",
+		"to": "2.1.0"
+	},
+	{
+		"version": "2.0.23+2.1.0-beta.2.3.0",
+		"from": "2.0.12",
+		"to": "2.1.0"
+	},
+	{
+		"version": "2.1.0.0.0",
+		"from": "2.0.12",
+		"to": "2.1.1"
+	}
+]

@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vesta package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: vesta 1.0\n"
+"Report-Msgid-Bugs-To: ric@richard-cissee.de\n"
+"POT-Creation-Date: 2022-04-03 20:23+0200\n"
+"PO-Revision-Date: 2021-10-23 09:03+0000\n"
+"Last-Translator: TheDutchJewel <thedutchjewel@gmail.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/vesta-webtrees-custom-modules/vesta-places-and-pedigree-map/nl/>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
+
+#. I18N: Module Configuration
+#: PlacesAndPedigreeMapModuleTrait.php:68
+msgid "A smaller threshold setting prevents performance issues in large lists, which may be encountered in flat place hierarchies."
+msgstr "Een kleinere drempelwaarde voorkomt prestatieproblemen in grote lijsten, die in platte plaatshiërarchieën kunnen voorkomen."
+
+#. I18N: Module Configuration
+#: PlacesAndPedigreeMapModuleTrait.php:63
+msgid "Display details"
+msgstr "Details weergeven"
+
+#. I18N: Module Configuration
+#: PlacesAndPedigreeMapModuleTrait.php:67
+msgid "Do not display details (such as location and number of individuals) if list size (for a specific place) is larger than ths threshold."
+msgstr "Geef geen details weer (zoals locatie en aantal personen) als de lijstgrootte (voor een specifieke plaats) groter is dan deze drempelwaarde."
+
+#. I18N: Module Configuration
+#: PlacesAndPedigreeMapModuleTrait.php:29
+#, php-format
+msgid "In particular, you should activate the '%1$s Vesta Webtrees Location Data Provider' module if you manage your location data via webtrees (outside the GEDCOM)."
+msgstr "In het bijzonder moet u de module '%1$s Vesta Webtrees locatiegegevensaanbieder' activeren als u uw locatiegegevens beheert via webtrees (buiten de GEDCOM)."
+
+#. I18N: Module Configuration
+#: PlacesAndPedigreeMapModuleTrait.php:95
+msgid "Place hierarchy list"
+msgstr "Plaatshiërarchielijst"
+
+#. I18N: Module Configuration
+#: PlacesAndPedigreeMapModuleTrait.php:21
+#: PlacesAndPedigreeMapModuleTrait.php:27
+msgid "The Place hierarchy. Also show the location of events and the birthplace of ancestors on a map. Replacement for the original 'Place hierarchy', 'Places' and  'Pedigree map' modules."
+msgstr "De plaatshiërarchie. Toon ook de locatie van de gebeurtenissen en de geboorteplaats van voorouders op een kaart. Vervanging voor de oorspronkelijke modules 'Plaatshiërarchie', 'Plaatsen' en 'Grafische kwartierstaat'."
+
+#. I18N: Module Configuration
+#: PlacesAndPedigreeMapModuleTrait.php:66
+msgid "Threshold size"
+msgstr "Drempelwaarde"
+
+#. I18N: Module Configuration
+#: PlacesAndPedigreeMapModuleTrait.php:28
+msgid "Uses location data from GEDCOM, as well as location data provided by other modules."
+msgstr "Maakt gebruik van locatiegegevens van GEDCOM en van locatiegegevens van andere modules."
+
+#: WhatsNew/WhatsNew0.php:11
+msgid "Vesta Places and Pedigree map: Now also provides a replacement for the Place hierarchy list, in order to show additional location data."
+msgstr "Vesta Plaatsen en Grafische kwartierstaat: Biedt nu ook een vervanging voor de plaatshiërarchielijst, om aanvullende locatiegegevens weer te geven."
+
+#~ msgid "Deselect in order to have the chart menu entry appear exactly as the original chart menu entry."
+#~ msgstr "Schakel de selectie uit om in het Diagrammen-menu de oorspronkelijke naam te blijven gebruiken."
+
+#~ msgid "Deselect in order to have the list menu entry appear exactly as the original chart menu entry."
+#~ msgstr "Schakel de selectie uit om in het Lijsten-menu de naam van het oorspronkelijke diagram te blijven gebruiken."
+
+#~ msgid "Deselect in order to have the tab appear exactly as the original tab."
+#~ msgstr "Schakel de selectie uit om de naam van het oorspronkelijke tabblad te blijven gebruiken."
+
+#~ msgid "Displayed title"
+#~ msgstr "Weergegeven titel"
+
+#~ msgid "Families"
+#~ msgstr "Gezinnen"
+
+#~ msgid "General"
+#~ msgstr "Algemeen"
+
+#~ msgid "Include the %1$s symbol in the chart menu entry"
+#~ msgstr "Het %1$s-­symbool opnemen in de vermelding in het diagrammenu"
+
+#~ msgid "Include the %1$s symbol in the list menu entry"
+#~ msgstr "Het %1$s-symbool opnemen in het Lijsten-menu"
+
+#~ msgid "Include the %1$s symbol in the tab title"
+#~ msgstr "Het %1$s-symbool opnemen in de titel van het tabblad"
+
+#~ msgid "Individuals"
+#~ msgstr "Personen"
+
+#~ msgid "Modules listed here are used (in the configured order) to determine map coordinates of places."
+#~ msgstr "Modules die hier worden vermeld, worden (in de geconfigureerde volgorde) gebruikt om kaartcoördinaten van plaatsen te bepalen."
+
+#~ msgid "Places and Pedigree Map Location Data Providers"
+#~ msgstr "Aanbieders van locatiegegevens voor plaatsen en grafische kwartierstaat"
+
+#~ msgid "The location of this place is not known."
+#~ msgstr "De locatie van deze plek is niet bekend."
+
+#~ msgid "Vesta Places and Pedigree map"
+#~ msgstr "Vesta Plaatsen en Grafische kwartierstaat"

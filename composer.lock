@@ -1,0 +1,33 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "3658c3379d552d9ca87f5fd873c3468e",
+    "packages": [
+        {
+            "name": "vesta-webtrees-2-custom-modules/vesta_classic_laf",
+            "version": "2.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://cissee.de/vesta.latest.zip"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cissee\\Webtrees\\Module\\ClassicLAF\\": "modules_v4/vesta_classic_look_and_feel/"
+                }
+            }
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

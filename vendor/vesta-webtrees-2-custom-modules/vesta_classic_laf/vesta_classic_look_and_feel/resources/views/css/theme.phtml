@@ -1,0 +1,351 @@
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/*
+adjustments as suggested here
+https://www.webtrees.net/index.php/en/forum/3-help-for-2-0-alpha/32882-solved-support-for-bigger-monitors#70135
+*/
+
+<?php if (boolval($module->getPreference('FULL_WIDTH', '1'))) : ?>
+
+@media (min-width:576px){.container-lg{max-width:540px}}
+@media (min-width:768px){.container-lg{max-width:720px}}
+@media (min-width:1024px){.container-lg{max-width:974px}}
+@media (min-width:1280px){.container-lg{max-width:1220px}}
+@media (min-width:1400px){.container-lg{max-width:1340px}}
+@media (min-width:1600px){.container-lg{max-width:1540px}}
+@media (min-width:1680px){.container-lg{max-width:1620px}}
+@media (min-width:1920px){.container-lg{max-width:1860px}}
+@media (min-width:2560px){.container-lg{max-width:2500px}}
+
+<?php endif ?>
+
+/* edit containers do not have to be that wide though on larger screens */
+@media (min-width:576px){.edit-container{max-width:540px}}
+@media (min-width:768px){.edit-container{max-width:720px}}
+@media (min-width:1024px){.edit-container{max-width:720px}}
+@media (min-width:1280px){.edit-container{max-width:720px}}
+@media (min-width:1400px){.edit-container{max-width:720px}}
+@media (min-width:1600px){.edit-container{max-width:720px}}
+@media (min-width:1680px){.edit-container{max-width:720px}}
+@media (min-width:1920px){.edit-container{max-width:720px}}
+@media (min-width:2560px){.edit-container{max-width:720px}}
+
+/* also do not center them?
+[dir="ltr"] .edit-container, 
+[dir="rtl"] .edit-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    //original values:
+    //padding-right: 15px;
+    //padding-left: 15px;
+    //margin-right: auto;
+    //margin-left: auto;
+}
+*/
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+<?php if (boolval($module->getPreference('COMPACT_INDI_PAGE', '1'))) : ?>
+
+/* 
+individual: title
+*/
+
+[dir] .mb-4, [dir] .my-4 {
+  margin-bottom: 0.25rem !important;
+  /* original values:
+  margin-bottom: 1.5rem !important;
+  */
+}
+
+/* 
+individual: name parts
+IndividualController.formatNameRecord 
+*/
+
+[dir] .btn-link {
+  padding: .125rem .125rem;
+  /* original values:
+  padding: .25rem .25rem;
+  */
+}
+
+[dir] .card-header {
+  padding: .25rem .75rem;
+  /* original values:
+  padding: .75rem 1.25rem;
+  */
+}
+
+[dir] .card-body {
+  padding: .25rem .75rem;
+  /* original values:
+  padding: 1.25rem;
+  */
+}
+
+[dir] dl {
+  margin-bottom: 0rem;
+  /* original values:
+  margin-bottom: 1rem;
+  */
+}
+
+dl dd {
+  display: inline;
+}
+
+dl dd:after{
+  display: block;
+  content: '';
+}
+
+dl dt{
+  display: inline-block;
+  margin-right: 2ch;
+}
+
+/* 
+everywhere: do not use sex icon images
+*/
+
+.wt-icon-sex-m {
+	content: none;
+	color: #31639c;
+}
+
+.wt-icon-sex-f {
+	content: none;
+	color: #9c3163;
+}
+
+.wt-icon-sex-u {
+	content: none;
+}
+
+/* 
+individual: sex icon
+*/
+
+.vt_gender .wt-icon-sex-m,.vt_gender .wt-icon-sex-f,.vt_gender .wt-icon-sex-u {
+  width: 0.8em;
+	height: 0.8em;
+  font-size: 1.5rem !important;
+}
+
+/* 
+individual: tabs
+*/
+
+[dir] .pt-4, [dir] .py-4 {
+  padding-top: .25rem !important;
+  padding-bottom: .25rem !important;
+  /* original values:
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  */
+}
+
+[dir] .wt-facts-table {
+  margin-bottom: 0rem;
+  /* original values:
+  margin-bottom: 1rem;
+  */
+}
+
+[dir] .wt-facts-table td, [dir] .table th {
+  padding: .25rem;
+  /* original values:
+  padding: .75rem;
+  */
+}
+
+[dir] label {
+  margin-bottom: 0rem;
+  /* original values:
+  margin-bottom: .5rem;
+  */
+}
+
+[dir] caption {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  /* original values:
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  */
+}
+
+<?php endif ?>
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/*
+Family navigator sidebar
+
+make long names, small display sizes etc behave better - all this should probably be in webtrees itself!
+(we have made this part of the layout smaller, so it's even more important here though)
+*/
+
+[dir] .wt-family-navigator-family {
+  table-layout: fixed;
+}
+
+[dir] .wt-family-navigator-family th {
+  /* effectively affects the first column. Can we set a more flexible width? apparently not with table layout 'fixed' */
+  width: 30%;
+}
+
+[dir] .wt-family-navigator-family .dropdown-toggle {
+  /* 
+  not sure what original 'nowrap' is supposed to accomplish,
+  effect is: 'younger sister' wraps, 'younger sister (dropdown arrow)' doesn't. That's not what we want!
+  probably intended to prevent wrapping of the dropdown arrow (actually some borders, WTF - this is from bootstrap),
+  which itself is added via css (with implicit whitespace wrt the white-space property, apparently)
+  */
+  white-space: normal;
+}
+
+/* note: very long names in dropdown are still problematic */
+[dir] .wt-family-navigator-family .dropdown-item {
+  white-space: normal;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/*
+edit dialogs
+*/
+
+/*
+more space for names (should use this regardless of compact layout?)
+also pad and border etc like a form-control
+(maybe just use class form-control?)
+*/
+.edit-container input.NAME, .edit-container input._MARNM {
+  width: calc(100% - 25px);
+  
+  height: calc(1.5em + 2px);
+  
+  padding-top: 0.1rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.1rem;
+  padding-left: 0.5rem;
+
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+/*
+compact layout
+*/
+
+.edit-container .form-control {
+  height: calc(1.5em + 2px);
+  /* original values:
+  height: calc(1.5em + .75rem + 2px);
+  */
+}
+
+.edit-container textarea.form-control {
+    height: auto;
+}
+
+[dir] .edit-container .form-control {
+  padding-top: 0.1rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.1rem;
+  padding-left: 0.5rem;
+  /* original values:
+  padding-top: 0.375rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.75rem;
+  */
+}  
+        
+[dir] .edit-container .form-group {
+    margin-bottom: 0.1rem;
+    /* original values:
+    margin-bottom: 1rem;
+    */
+}
+
+[dir] .edit-container .col-form-label {
+    padding-top: calc(.1rem + 1px);
+    padding-bottom: calc(.1rem + 1px);
+    /* original values:
+    padding-top: calc(.375rem + 1px);
+    padding-bottom: calc(.375rem + 1px);
+    */
+    margin-bottom: 0;
+}
+
+/* icons for location, help etc */
+[dir] .edit-container .input-group-text {
+    padding-top: 0.1rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.75rem;
+    /* original values:
+    padding-top: 0.375rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.375rem;
+    padding-left: 0.75rem;
+    */
+}
+
+/* text output e.g. for dates */
+[dir] .edit-container p {
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+    /* original values:
+    margin-top: 0;
+    margin-bottom: 1rem;
+    */
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/* issue #50 */
+/* Add space between thumbnails */
+.p-1 .gallery {
+padding-left: 2px;
+}
+
+/* 
+  Put the header (including as menu items) 
+  on top of other specific z-indexed items (such as leaflet controls, which are at 1000),
+  but below modal stuff (which starts at 1040)
+
+  (do not set a z-index for main: we must keep it at auto, 
+  so that .modal and .modal-backdrop stack properly - 
+  with a z-index set on main, they currently end up in different stacking contexts,
+  which is apparently unintended. 
+  It seems that a cleaner solution would be to put them into a single hierarchy)
+*/
+
+header {
+    z-index: 1010;
+}
+
+/*
+  We have to handle this specifically now
+*/  
+.wt-osk {
+    z-index: 9999;
+}
